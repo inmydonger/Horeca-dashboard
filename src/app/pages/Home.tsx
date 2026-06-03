@@ -8,8 +8,10 @@ import {
   ArrowRight,
   Send,
   ArrowUpDown,
-  Check
+  Check,
+  CheckCircle2
 } from 'lucide-react';
+import { toast } from 'sonner';
 import { 
   BarChart, 
   Bar, 
@@ -24,6 +26,7 @@ import {
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../components/ui/dropdown-menu';
 import { KPIScorecard } from '../components/KPIScorecard';
 import { RevenueChart } from '../components/RevenueChart';
 import { ARAgingAlerts } from '../components/ARAgingAlerts';
@@ -62,6 +65,15 @@ const accountsReceivable = [
 
 export function Home() {
   const [isSendCsvDialogOpen, setIsSendCsvDialogOpen] = useState(false);
+  const [selectedDays, setSelectedDays] = useState(30);
+
+  const handleConfirmSend = () => {
+    setIsSendCsvDialogOpen(false);
+    toast('Report has been sent to your email!', {
+      description: 'Please check your inbox or spam folder.',
+      icon: <CheckCircle2 className="h-5 w-5 fill-slate-900 text-white" />
+    });
+  };
 
   return (
     <div className="space-y-6 pb-8">
@@ -72,10 +84,21 @@ export function Home() {
           <p className="text-slate-500 text-sm mt-1">Here's what's happening with your wholesale operations today.</p>
         </div>
         <div className="flex items-center gap-2">
-          <Button variant="outline" className="text-slate-600 bg-white shadow-sm border-slate-200">
-            <CalendarIcon className="mr-2 h-4 w-4" />
-            Last 30 Days
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="text-slate-600 bg-white shadow-sm border-slate-200">
+                <CalendarIcon className="mr-2 h-4 w-4" />
+                Last {selectedDays} Days
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-[150px]">
+              {[30, 45, 60, 90].map((days) => (
+                <DropdownMenuItem key={days} onClick={() => setSelectedDays(days)}>
+                  {days} Days
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Button variant="destructive" className="shadow-sm" onClick={() => setIsSendCsvDialogOpen(true)}>
             <Send className="mr-2 h-4 w-4" />
             Send CSV via Email
@@ -116,7 +139,7 @@ export function Home() {
               <Button variant="outline" onClick={() => setIsSendCsvDialogOpen(false)}>
                 Cancel
               </Button>
-              <Button variant="destructive" onClick={() => setIsSendCsvDialogOpen(false)}>
+              <Button variant="destructive" onClick={handleConfirmSend}>
                 <Check className="mr-2 h-4 w-4" />
                 Confirm & Send
               </Button>
