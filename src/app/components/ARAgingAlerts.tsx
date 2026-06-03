@@ -46,7 +46,7 @@ export function ARAgingAlerts({ data, className = '' }: ARAgingAlertsProps) {
       <CardContent className="p-0 flex-1">
         <div className="flex flex-col h-full">
           {data.map((account) => (
-            <div key={account.id} className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+            <div key={account.id} className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-neutral-50 transition-colors">
               <div className="flex flex-col gap-1">
                 <span className="font-medium text-slate-900 text-sm">{account.name}</span>
                 <div className="flex items-center gap-2">

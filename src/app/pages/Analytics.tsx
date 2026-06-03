@@ -337,7 +337,7 @@ export function Analytics() {
             .map((report) => (
               <Card key={report.id} className={`p-5 shadow-sm border-slate-200 flex transition-colors hover:border-slate-300 ${reportView === 'grid' ? 'flex-col gap-4' : 'flex-col sm:flex-row sm:items-center justify-between gap-4'}`}>
                 <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-md bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
+                  <div className="h-10 w-10 rounded-md bg-neutral-50 border border-slate-200 flex items-center justify-center shrink-0">
                     {reportTab === 'ar_aging' ? <FileText className="h-5 w-5 text-slate-500" /> : <FileSpreadsheet className="h-5 w-5 text-slate-500" />}
                   </div>
                   <div>
@@ -396,7 +396,7 @@ export function Analytics() {
               <div className="space-y-3">
                 <label className="text-sm font-semibold text-slate-900 block">Select Reports to Include</label>
                 <div className="space-y-3">
-                  <label className={`flex items-start gap-3 p-3 border rounded-xl cursor-pointer transition-colors ${schedulerState.reports.arAging ? 'border-rose-600 bg-white' : 'border-slate-200 hover:bg-slate-50'}`}>
+                  <label className={`flex items-start gap-3 p-3 border rounded-xl cursor-pointer transition-colors ${schedulerState.reports.arAging ? 'border-rose-600 bg-white' : 'border-slate-200 hover:bg-neutral-50'}`}>
                     <div className="flex items-center h-5 mt-0.5">
                       <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${schedulerState.reports.arAging ? 'border-rose-600' : 'border-slate-300'}`}>
                         {schedulerState.reports.arAging && <div className="w-2 h-2 rounded-full bg-rose-600" />}
@@ -414,7 +414,7 @@ export function Analytics() {
                     </div>
                   </label>
                   
-                  <label className={`flex items-start gap-3 p-3 border rounded-xl cursor-pointer transition-colors ${schedulerState.reports.salesSummary ? 'border-rose-600 bg-white' : 'border-slate-200 hover:bg-slate-50'}`}>
+                  <label className={`flex items-start gap-3 p-3 border rounded-xl cursor-pointer transition-colors ${schedulerState.reports.salesSummary ? 'border-rose-600 bg-white' : 'border-slate-200 hover:bg-neutral-50'}`}>
                     <div className="flex items-center h-5 mt-0.5">
                       <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${schedulerState.reports.salesSummary ? 'border-rose-600' : 'border-slate-300'}`}>
                         {schedulerState.reports.salesSummary && <div className="w-2 h-2 rounded-full bg-rose-600" />}
@@ -437,7 +437,7 @@ export function Analytics() {
               {/* Format - Read Only per PRD */}
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-slate-900 block">File Format</label>
-                <div className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-500 cursor-not-allowed flex items-center gap-2">
+                <div className="w-full px-3 py-2 bg-neutral-50 border border-slate-200 rounded-lg text-sm text-slate-500 cursor-not-allowed flex items-center gap-2">
                   <FileText className="h-4 w-4" />
                   CSV (Comma Separated Values)
                 </div>
@@ -510,7 +510,7 @@ export function Analytics() {
 
             {/* Drawer Footer */}
             <div className="p-6 border-t border-slate-200 bg-white flex gap-3">
-              <Button variant="outline" className="flex-1 border-slate-200 bg-white text-slate-900 hover:bg-slate-50" onClick={() => setIsSchedulerOpen(false)}>
+              <Button variant="outline" className="flex-1 border-slate-200 bg-white text-slate-900 hover:bg-neutral-50" onClick={() => setIsSchedulerOpen(false)}>
                 Cancel
               </Button>
               <Button className="flex-1 bg-rose-600 text-white hover:bg-rose-700 shadow-sm border-0" onClick={() => setIsSaveConfirmationOpen(true)}>
@@ -600,7 +600,7 @@ export function Analytics() {
           <Card className="w-full max-w-4xl p-0 bg-white shadow-xl flex flex-col max-h-[85vh] animate-in zoom-in-95 duration-200 overflow-hidden">
             <div className="flex justify-between items-start p-5 border-b border-slate-100 shrink-0">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-md bg-slate-50 border border-slate-200 flex items-center justify-center">
+                <div className="h-10 w-10 rounded-md bg-neutral-50 border border-slate-200 flex items-center justify-center">
                   {previewReport === 'ar_aging' ? <FileText className="h-5 w-5 text-slate-500" /> : <FileSpreadsheet className="h-5 w-5 text-slate-500" />}
                 </div>
                 <div>
@@ -617,7 +617,7 @@ export function Analytics() {
             
             <div className="overflow-y-auto flex-1 min-h-0 bg-white">
               <table className="w-full text-sm text-left whitespace-nowrap">
-                <thead className="text-xs text-slate-500 uppercase bg-slate-50/50 border-b border-slate-200 sticky top-0">
+                <thead className="text-xs text-slate-500 uppercase bg-neutral-50/50 border-b border-slate-200 sticky top-0">
                   {previewReport === 'ar_aging' ? (
                     <tr>
                       <th className="px-5 py-3 font-medium">Customer</th>
@@ -640,7 +640,7 @@ export function Analytics() {
                 <tbody className="divide-y divide-slate-100">
                   {previewReport === 'ar_aging' ? (
                     mockARAging.map((row) => (
-                      <tr key={row.id} className="hover:bg-slate-50/50 transition-colors">
+                      <tr key={row.id} className="hover:bg-neutral-50/50 transition-colors">
                         <td className="px-5 py-3 font-medium text-slate-900">{row.customer}</td>
                         <td className="px-5 py-3 text-right text-slate-600">{formatIDR(row.current)}</td>
                         <td className="px-5 py-3 text-right text-slate-600">{formatIDR(row.days30)}</td>
@@ -651,7 +651,7 @@ export function Analytics() {
                     ))
                   ) : (
                     mockSalesSummary.map((row) => (
-                      <tr key={row.id} className="hover:bg-slate-50/50 transition-colors">
+                      <tr key={row.id} className="hover:bg-neutral-50/50 transition-colors">
                         <td className="px-5 py-3 text-slate-600">{row.date}</td>
                         <td className="px-5 py-3 font-medium text-slate-900">{row.customer}</td>
                         <td className="px-5 py-3 text-slate-600">{row.product}</td>
@@ -664,7 +664,7 @@ export function Analytics() {
               </table>
             </div>
             
-            <div className="flex justify-end gap-3 p-4 bg-slate-50 border-t border-slate-100 shrink-0">
+            <div className="flex justify-end gap-3 p-4 bg-neutral-50 border-t border-slate-100 shrink-0">
               <Button variant="outline" className="bg-white border-slate-200 text-slate-900" onClick={() => setPreviewReport(null)}>
                 Cancel
               </Button>

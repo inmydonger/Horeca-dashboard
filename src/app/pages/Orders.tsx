@@ -79,7 +79,7 @@ export function Orders() {
         <div className="bg-white border border-[#e5e5e5] rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.1)] overflow-hidden">
           <Table>
             <TableHeader>
-              <TableRow className="bg-slate-50/50 border-b border-[#e5e5e5] hover:bg-slate-50/50">
+              <TableRow className="bg-neutral-50/50 border-b border-[#e5e5e5] hover:bg-neutral-50/50">
                 <TableHead className="w-[120px] text-[#62748e] font-medium h-12">Order ID</TableHead>
                 <TableHead className="text-[#62748e] font-medium h-12">Customer</TableHead>
                 <TableHead className="text-[#62748e] font-medium h-12">Date</TableHead>
@@ -91,7 +91,7 @@ export function Orders() {
             <TableBody>
               {/* Highlighted Top Row - Focus Point */}
               <TableRow 
-                className="cursor-pointer hover:bg-slate-50/50 bg-[rgba(248,250,252,0.3)] border-b border-[#e5e5e5] group transition-colors h-[54px]"
+                className="cursor-pointer hover:bg-neutral-50/50 bg-[rgba(250,250,250,0.3)] border-b border-[#e5e5e5] group transition-colors h-[54px]"
                 onClick={() => setCurrentView('detail-edit')}
               >
                 <TableCell className="font-medium text-[#0f172b]">
@@ -193,7 +193,7 @@ export function Orders() {
             <div className="p-6 pt-0 flex gap-3 justify-end border-none">
               <Button 
                 variant="outline" 
-                className="bg-white text-[#0f172b] border-[#e5e5e5] hover:bg-slate-50 font-medium rounded-[8px] px-4 py-2 h-10"
+                className="bg-white text-[#0f172b] border-[#e5e5e5] hover:bg-neutral-50 font-medium rounded-[8px] px-4 py-2 h-10"
                 onClick={() => setStatusChangeTarget(null)}
               >
                 Cancel
@@ -236,7 +236,7 @@ export function Orders() {
                 <label className="text-[14px] font-medium text-[#0f172b]">Date Received</label>
                 <Popover>
                   <PopoverTrigger asChild>
-                    <button className="flex w-full items-center border border-[#e5e5e5] rounded-[8px] h-10 overflow-hidden focus-visible:ring-1 focus-visible:ring-slate-900 focus-visible:outline-none hover:bg-slate-50 transition-colors">
+                    <button className="flex w-full items-center border border-[#e5e5e5] rounded-[8px] h-10 overflow-hidden focus-visible:ring-1 focus-visible:ring-slate-900 focus-visible:outline-none hover:bg-neutral-50 transition-colors">
                       <div className="pl-3 pr-3 py-2 flex items-center justify-center border-r border-[#e5e5e5] bg-transparent h-full">
                         <CalendarIcon className="w-4 h-4 text-[#62748e]" />
                       </div>
@@ -268,7 +268,7 @@ export function Orders() {
             <div className="px-6 pb-6 pt-2 flex justify-end gap-3">
               <Button 
                 variant="outline" 
-                className="rounded-[8px] border-[#e5e5e5] text-[#0f172b] font-medium hover:bg-slate-50 h-10 px-4"
+                className="rounded-[8px] border-[#e5e5e5] text-[#0f172b] font-medium hover:bg-neutral-50 h-10 px-4"
                 onClick={() => setIsPaymentModalOpen(false)}
               >
                 Cancel
@@ -366,7 +366,7 @@ export function Orders() {
             </div>
             <Table>
               <TableHeader>
-                <TableRow className="bg-slate-50/50 border-b border-[#e5e5e5] hover:bg-slate-50/50">
+                <TableRow className="bg-neutral-50/50 border-b border-[#e5e5e5] hover:bg-neutral-50/50">
                   <TableHead className="w-[60px] h-12"></TableHead>
                   <TableHead className="text-[#62748e] font-medium h-12">Product</TableHead>
                   <TableHead className="text-[#62748e] font-medium h-12 text-left">Unit Price</TableHead>
@@ -495,7 +495,7 @@ export function Orders() {
                 <span className="font-medium text-[#0f172b]">Free (Wholesale)</span>
               </div>
             </div>
-            <div className="p-6 pt-4 border-t border-[#e5e5e5] bg-slate-50/50 flex justify-between items-center">
+            <div className="p-6 pt-4 border-t border-[#e5e5e5] bg-neutral-50/50 flex justify-between items-center">
               <span className="font-semibold text-[#0f172b] text-[16px]">Final Total</span>
               <div className="text-right">
                 <span className="font-semibold text-[18px] text-[#0f172b]">

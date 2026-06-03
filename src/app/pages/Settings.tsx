@@ -166,14 +166,14 @@ export function Settings() {
                 <p className="text-sm text-slate-500 mt-1">Manage your brand identity and legal configuration.</p>
               </div>
               <div className="flex gap-3 w-full sm:w-auto justify-end">
-                <Button variant="outline" className="bg-white hover:bg-slate-50">Discard</Button>
+                <Button variant="outline" className="bg-white hover:bg-neutral-50">Discard</Button>
                 <Button className="bg-red-600 text-white hover:bg-red-700" onClick={() => toast.success('Profile settings saved')}>Save Changes</Button>
               </div>
             </div>
 
             {/* Card 1: Brand & Legal Identity */}
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-hidden">
-              <CardHeader className="bg-slate-50/50 border-b border-slate-100 pb-4">
+              <CardHeader className="bg-neutral-50/50 border-b border-slate-100 pb-4">
                 <CardTitle className="text-base">Brand & Legal Identity</CardTitle>
                 <CardDescription>
                   This information appears on your buyer portal and all generated PDF invoices.
@@ -184,7 +184,7 @@ export function Settings() {
                 {/* Logo Upload */}
                 <div className="space-y-3">
                   <label className="text-sm font-medium text-slate-900">Company Logo</label>
-                  <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 flex flex-col items-center justify-center bg-slate-50/50 hover:bg-slate-50 transition-colors cursor-pointer group">
+                  <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 flex flex-col items-center justify-center bg-neutral-50/50 hover:bg-neutral-50 transition-colors cursor-pointer group">
                     <div className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
                       <UploadCloud className="h-5 w-5 text-slate-500" />
                     </div>
@@ -218,7 +218,7 @@ export function Settings() {
 
             {/* Card 2: Offline Invoice Bank Details */}
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-hidden">
-              <CardHeader className="bg-slate-50/50 border-b border-slate-100 pb-4">
+              <CardHeader className="bg-neutral-50/50 border-b border-slate-100 pb-4">
                 <CardTitle className="text-base">Offline Invoice Bank Details</CardTitle>
                 <CardDescription>
                   These details will be printed on the bottom of all invoices to instruct buyers on where to send offline transfers.
@@ -269,7 +269,7 @@ export function Settings() {
 
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-visible">
               <Table>
-                <TableHeader className="bg-slate-50/50">
+                <TableHeader className="bg-neutral-50/50">
                   <TableRow>
                     <TableHead className="font-medium text-slate-500">Name & Email</TableHead>
                     <TableHead className="font-medium text-slate-500">Role</TableHead>
@@ -324,7 +324,7 @@ export function Settings() {
                               />
                               <div className="absolute right-0 mt-1 w-40 bg-white rounded-md shadow-lg border border-slate-200 z-20 py-1 overflow-hidden animate-in fade-in zoom-in-95 duration-100">
                                 <button 
-                                  className="w-full flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 transition-colors"
+                                  className="w-full flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-neutral-50 transition-colors"
                                   onClick={() => openEditModal(user)}
                                 >
                                   <Edit2 className="w-4 h-4 mr-2 text-slate-500" />
@@ -358,14 +358,14 @@ export function Settings() {
                 <p className="text-sm text-slate-500 mt-1">Manage invoice defaults and your platform subscription.</p>
               </div>
               <div className="flex gap-3 w-full sm:w-auto justify-end">
-                <Button variant="outline" className="bg-white hover:bg-slate-50">Discard</Button>
+                <Button variant="outline" className="bg-white hover:bg-neutral-50">Discard</Button>
                 <Button className="bg-red-600 text-white hover:bg-red-700" onClick={() => toast.success('Invoice settings saved')}>Save Settings</Button>
               </div>
             </div>
 
             {/* Card 1: Invoice Engine Customization */}
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-hidden">
-              <CardHeader className="bg-slate-50/50 border-b border-slate-100 pb-4">
+              <CardHeader className="bg-neutral-50/50 border-b border-slate-100 pb-4">
                 <CardTitle className="text-base">Invoice Engine Customization (For Buyers)</CardTitle>
                 <CardDescription>
                   Configure the default settings for the PDF invoices sent to your customers.
@@ -413,14 +413,14 @@ export function Settings() {
                 <p className="text-sm text-slate-500 mt-1">Manage system alerts and automated buyer communication.</p>
               </div>
               <div className="flex gap-3 w-full sm:w-auto justify-end">
-                <Button variant="outline" className="bg-white hover:bg-slate-50">Discard</Button>
+                <Button variant="outline" className="bg-white hover:bg-neutral-50">Discard</Button>
                 <Button className="bg-red-600 text-white hover:bg-red-700" onClick={() => toast.success('Notification settings saved')}>Save Settings</Button>
               </div>
             </div>
 
             {/* Card 1: Buyer Email Triggers */}
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-hidden">
-              <CardHeader className="bg-slate-50/50 border-b border-slate-100 pb-4">
+              <CardHeader className="bg-neutral-50/50 border-b border-slate-100 pb-4">
                 <CardTitle className="text-base">Buyer Email Triggers (Outbound)</CardTitle>
                 <CardDescription>
                   Manage the automated emails sent to your customers during the order lifecycle.
@@ -469,7 +469,7 @@ export function Settings() {
 
             {/* Card 2: Internal Routing */}
             <Card className="border-slate-200 shadow-sm rounded-lg overflow-hidden">
-              <CardHeader className="bg-slate-50/50 border-b border-slate-100 pb-4">
+              <CardHeader className="bg-neutral-50/50 border-b border-slate-100 pb-4">
                 <CardTitle className="text-base">Internal Routing (Inbound Alerts)</CardTitle>
                 <CardDescription>
                   Direct system alerts to specific internal departments.
@@ -546,7 +546,7 @@ export function Settings() {
                   <label 
                     className={`flex items-start gap-3 p-3 rounded-lg border transition-colors ${
                       !canSelectSuperAdmin 
-                        ? 'opacity-60 cursor-not-allowed bg-slate-50 border-slate-200' 
+                        ? 'opacity-60 cursor-not-allowed bg-neutral-50 border-slate-200' 
                         : staffFormRole === 'Super Admin' 
                           ? 'border-[#DC2626] bg-white cursor-pointer' 
                           : 'border-slate-200 hover:border-slate-300 cursor-pointer'

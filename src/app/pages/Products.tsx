@@ -9,7 +9,8 @@ import {
   ArrowUpDown,
   ChevronDown,
   ChevronUp,
-  Check
+  Check,
+  ChevronsUpDown
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -89,7 +90,7 @@ export function Products() {
   const [editingProductId, setEditingProductId] = useState<string | null>(null);
 
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedUoM, setSelectedUoM] = useState('Kilograms (kg)');
+  const [selectedUoM, setSelectedUoM] = useState('Kilograms (Kg)');
 
   const [sortField, setSortField] = useState<SortField>(null);
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
@@ -109,14 +110,14 @@ export function Products() {
     setEditingProductId(product.id);
     setCurrentView('edit');
     setSelectedCategory(product.category);
-    setSelectedUoM('Kilograms (kg)');
+    setSelectedUoM('Kilograms (Kg)');
   };
 
   const handleAddProduct = () => {
     setEditingProductId(null);
     setCurrentView('add');
     setSelectedCategory('');
-    setSelectedUoM('Kilograms (kg)');
+    setSelectedUoM('Kilograms (Kg)');
   };
 
   const filteredAndSortedProducts = mockProducts
@@ -220,7 +221,7 @@ export function Products() {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-900">Media</label>
-                  <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 flex flex-col items-center justify-center text-center bg-slate-50 hover:bg-slate-100/50 transition-colors cursor-pointer group">
+                  <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 flex flex-col items-center justify-center text-center bg-neutral-50 hover:bg-slate-100/50 transition-colors cursor-pointer group">
                     <div className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center mb-3 group-hover:border-blue-200 group-hover:bg-blue-50 transition-colors">
                       <UploadCloud className="h-5 w-5 text-slate-400 group-hover:text-blue-600" />
                     </div>
@@ -295,30 +296,30 @@ export function Products() {
               </CardContent>
             </Card>
 
-            {/* Card 3: Inventory & B2B Logistics */}
+            {/* Card 3: Inventory & Logistics */}
             <Card className="shadow-sm border-slate-200">
               <CardHeader className="pb-4 border-b border-slate-100">
                 <CardTitle className="text-base font-medium">Inventory & Logistics</CardTitle>
               </CardHeader>
               <CardContent className="pt-6 space-y-5">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-900">Current Stock Level</label>
+                  <label className="text-sm font-medium text-slate-900">Product Stock</label>
                   <Input defaultValue={editingProduct?.stock ?? ''} type="number" placeholder="0" className="bg-white" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-900">Base Unit of Measure (UoM)</label>
+                  <label className="text-sm font-medium text-slate-900">Unit of Measurement (UoM)</label>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <button className="flex items-center justify-between h-10 w-full rounded-[8px] border border-[#e2e8f0] bg-white px-[12.676px] py-[8.676px] text-[14px] font-normal text-[#0f172b] shadow-sm ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2">
                         {selectedUoM}
-                        <ChevronDown className="h-4 w-4 opacity-50" />
+                        <ChevronsUpDown className="h-4 w-4 opacity-50" />
                       </button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent 
                       align="start"
                       className="w-[var(--radix-dropdown-menu-trigger-width)] bg-white border-[#e2e8f0] border-[0.676px] rounded-[12px] p-[4.676px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)]"
                     >
-                      {['Kilograms (kg)', 'Liter (L)', 'Carton', 'Pallet', 'Unit / Piece'].map(uom => (
+                      {['Kilograms (Kg)', 'Liter (L)', 'Carton', 'Pallet', 'Unit / Piece'].map(uom => (
                         <DropdownMenuItem 
                           key={uom} 
                           onClick={() => setSelectedUoM(uom)}
@@ -330,19 +331,11 @@ export function Products() {
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-xs font-medium text-slate-900 leading-tight block h-8">
-                      Minimum Order Qty (MOQ)
-                    </label>
-                    <Input type="number" placeholder="e.g. 5" className="bg-white" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-medium text-slate-900 leading-tight block h-8">
-                      Quantity Multiples
-                    </label>
-                    <Input type="number" placeholder="e.g. 6" className="bg-white" />
-                  </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-medium text-slate-900 leading-tight">
+                    Minimum Order Qty (MOQ)
+                  </label>
+                  <Input type="number" placeholder="e.g. 5" className="bg-white" />
                 </div>
               </CardContent>
             </Card>
@@ -390,7 +383,7 @@ export function Products() {
       <Card>
         <Table>
           <TableHeader>
-            <TableRow className="bg-slate-50/50 hover:bg-slate-50/50">
+            <TableRow className="bg-neutral-50/50 hover:bg-neutral-50/50">
               <TableHead className="w-[64px]"></TableHead>
               <TableHead
                 className="cursor-pointer hover:text-slate-900 select-none"
@@ -425,9 +418,9 @@ export function Products() {
           </TableHeader>
           <TableBody>
             {filteredAndSortedProducts.map((product) => (
-              <TableRow key={product.id} className="hover:bg-slate-50 group">
+              <TableRow key={product.id} className="hover:bg-neutral-50 group">
                 <TableCell>
-                  <div className="h-10 w-10 rounded-md border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-400">
+                  <div className="h-10 w-10 rounded-md border border-slate-200 bg-neutral-50 flex items-center justify-center text-slate-400">
                     <ImageIcon className="h-4 w-4" />
                   </div>
                 </TableCell>

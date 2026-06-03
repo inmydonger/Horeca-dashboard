@@ -23,7 +23,7 @@ export function AppShell() {
   ];
 
   return (
-    <div className="flex h-screen w-full bg-slate-50 text-slate-900 font-sans overflow-hidden">
+    <div className="flex h-screen w-full bg-neutral-50 text-slate-900 font-sans overflow-hidden">
       {/* Sidebar - White theme */}
       <div className={cn(
         "bg-white border-r border-slate-200 text-slate-600 flex flex-col flex-shrink-0 transition-all duration-300 ease-in-out",
@@ -65,7 +65,7 @@ export function AppShell() {
                   "flex items-center rounded-md transition-all duration-300 text-sm font-medium",
                   isActive
                     ? "bg-slate-100 text-slate-900"
-                    : "text-slate-500 hover:bg-slate-50 hover:text-slate-900",
+                    : "text-slate-500 hover:bg-neutral-50 hover:text-slate-900",
                   isCollapsed ? "justify-center py-3" : "gap-3 px-3 py-2"
                 )
               }
@@ -129,7 +129,7 @@ export function AppShell() {
               <input
                 type="text"
                 placeholder="Search orders, customers, or products..."
-                className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                className="w-full pl-9 pr-4 py-2 bg-neutral-50 border border-slate-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
               />
             </div>
           </div>

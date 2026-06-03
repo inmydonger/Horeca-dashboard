@@ -54,7 +54,7 @@ export function TopProducts({ revenueData, volumeData, className = '', showViewA
           {currentProducts.map((product) => (
             <div key={product.id} className="flex items-center justify-between border-b border-slate-100 pb-4 last:border-0 last:pb-0">
               <div className="flex items-center gap-3 overflow-hidden">
-                <div className="w-10 h-10 rounded bg-slate-50 border border-slate-100 flex items-center justify-center text-xl shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded bg-neutral-50 border border-slate-100 flex items-center justify-center text-xl shrink-0 shadow-sm">
                   {product.image}
                 </div>
                 <div className="min-w-0 pr-4">

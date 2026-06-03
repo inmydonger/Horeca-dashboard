@@ -234,7 +234,7 @@ export function Customers() {
 
               </div>
               
-              <div className="p-4 border-t border-slate-100 bg-slate-50 flex justify-end gap-3 shrink-0">
+              <div className="p-4 border-t border-slate-100 bg-neutral-50 flex justify-end gap-3 shrink-0">
                 <Button variant="outline" className="bg-white" onClick={() => setCurrentView('list')}>
                   Cancel
                 </Button>
@@ -281,7 +281,7 @@ export function Customers() {
         <Card>
           <Table>
             <TableHeader>
-              <TableRow className="bg-slate-50/50 hover:bg-slate-50/50">
+              <TableRow className="bg-neutral-50/50 hover:bg-neutral-50/50">
                 <TableHead className="w-[50px]"></TableHead>
                 <TableHead
                   className="cursor-pointer hover:text-slate-900 select-none"
@@ -319,11 +319,11 @@ export function Customers() {
               {filteredAndSortedCustomers.map((customer) => (
                 <TableRow 
                   key={customer.id} 
-                  className={`hover:bg-slate-50 group cursor-pointer ${customer.status === 'inactive' ? 'opacity-70' : ''}`}
+                  className={`hover:bg-neutral-50 group cursor-pointer ${customer.status === 'inactive' ? 'opacity-70' : ''}`}
                   onClick={() => setCurrentView('profile')}
                 >
                   <TableCell>
-                    <div className="h-9 w-9 rounded-md border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-400">
+                    <div className="h-9 w-9 rounded-md border border-slate-200 bg-neutral-50 flex items-center justify-center text-slate-400">
                       <Building2 className="h-4 w-4" />
                     </div>
                   </TableCell>
@@ -522,11 +522,11 @@ export function Customers() {
             <Card className="shadow-sm border-slate-200">
               <div className="p-6 pb-4 border-b border-slate-100 flex items-center justify-between">
                 <h2 className="text-base font-semibold text-slate-900">Recent Orders</h2>
-                <Button variant="outline" className="bg-white border-[#e2e8f0] text-[#0f172b] hover:bg-slate-50 shadow-sm h-9 px-4 rounded-md">View All</Button>
+                <Button variant="outline" className="bg-white border-[#e2e8f0] text-[#0f172b] hover:bg-neutral-50 shadow-sm h-9 px-4 rounded-md">View All</Button>
               </div>
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-slate-50/30 hover:bg-slate-50/30">
+                  <TableRow className="bg-neutral-50/30 hover:bg-neutral-50/30">
                     <TableHead className="w-[100px]">Order</TableHead>
                     <TableHead>Date</TableHead>
                     <TableHead>Fulfillment</TableHead>
@@ -590,14 +590,14 @@ export function Customers() {
                 <div className="space-y-3 pt-1">
                   <div className="flex justify-between items-center">
                     <span className="text-sm font-medium text-slate-600">Payment Terms</span>
-                    <Badge variant="outline" className="bg-slate-50 text-slate-700 font-semibold border-slate-200">Net-30</Badge>
+                    <Badge variant="outline" className="bg-neutral-50 text-slate-700 font-semibold border-slate-200">Net-30</Badge>
                   </div>
                 </div>
               </div>
             </Card>
             
             {/* NPWP Card */}
-            <Card className="shadow-sm border-slate-200 bg-slate-50/50">
+            <Card className="shadow-sm border-slate-200 bg-neutral-50/50">
               <div className="p-5">
                 <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Tax Identity</h3>
                 <div className="flex items-center justify-between">
