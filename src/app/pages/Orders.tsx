@@ -105,7 +105,7 @@ export function Orders() {
                 </TableCell>
                 <TableCell>
                   <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#fefce9] border-[#ffe770] text-[#9e6c00] text-xs font-semibold">
-                    Pending
+                    Request
                   </div>
                 </TableCell>
                 <TableCell>
@@ -164,7 +164,7 @@ export function Orders() {
 
   // Helpers for Badges based on State
   const renderFulfillmentBadge = () => {
-    if (currentView === 'detail-edit') return <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#fefce9] border-[#ffe770] text-[#9e6c00] text-[12px] font-semibold">Pending</div>;
+    if (currentView === 'detail-edit') return <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#fefce9] border-[#ffe770] text-[#9e6c00] text-[12px] font-semibold">Request</div>;
     if (currentView === 'detail-locked') return <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#e6f4fe] border-[#c2e5ff] text-[#0d74ce] text-[12px] font-semibold">Processing</div>;
     if (currentView === 'detail-shipped') return <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#e6f6eb] border-[#c4e8d1] text-[#218358] text-[12px] font-semibold">Delivered</div>;
     if (currentView === 'detail-paid') return <div className="inline-flex items-center px-2.5 py-0.5 rounded-full border bg-[#e6f6eb] border-[#c4e8d1] text-[#218358] text-[12px] font-semibold">Delivered</div>;
