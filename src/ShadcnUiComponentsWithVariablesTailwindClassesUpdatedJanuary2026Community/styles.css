@@ -1,0 +1,2868 @@
+:root {
+  --slate\/50: #F8FAFC;
+  --slate\/100: #F1F5F9;
+  --slate\/200: #E2E8F0;
+  --slate\/300: #CBD5E1;
+  --slate\/400: #94A3B8;
+  --slate\/500: #64748B;
+  --slate\/600: #475569;
+  --slate\/700: #334155;
+  --slate\/800: #1E293B;
+  --slate\/900: #0F172A;
+  --slate\/950: #020617;
+  --gray\/50: #F9FAFB;
+  --gray\/100: #F3F4F6;
+  --gray\/200: #E5E7EB;
+  --gray\/300: #D1D5DB;
+  --gray\/400: #9CA3AF;
+  --gray\/500: #6B7280;
+  --gray\/600: #4B5563;
+  --gray\/700: #374151;
+  --gray\/800: #1F2937;
+  --gray\/900: #111827;
+  --gray\/950: #030712;
+  --zinc\/50: #FAFAFA;
+  --zinc\/100: #F4F4F5;
+  --zinc\/200: #E4E4E7;
+  --zinc\/300: #D4D4D8;
+  --zinc\/400: #A1A1AA;
+  --zinc\/500: #71717A;
+  --zinc\/600: #52525B;
+  --zinc\/700: #3F3F46;
+  --zinc\/800: #27272A;
+  --zinc\/900: #18181B;
+  --zinc\/950: #09090B;
+  --neutral\/50: #FAFAFA;
+  --neutral\/100: #F5F5F5;
+  --neutral\/200: #E5E5E5;
+  --neutral\/300: #D4D4D4;
+  --neutral\/400: #A3A3A3;
+  --neutral\/500: #737373;
+  --neutral\/600: #525252;
+  --neutral\/700: #404040;
+  --neutral\/800: #262626;
+  --neutral\/900: #171717;
+  --neutral\/950: #0A0A0A;
+  --stone\/50: #FAFAF9;
+  --stone\/100: #F5F5F4;
+  --stone\/200: #E7E5E4;
+  --stone\/300: #D6D3D1;
+  --stone\/400: #A8A29E;
+  --stone\/500: #78716C;
+  --stone\/600: #57534E;
+  --stone\/700: #44403C;
+  --stone\/800: #292524;
+  --stone\/900: #1C1917;
+  --stone\/950: #0C0A09;
+  --red\/50: #FEF2F2;
+  --red\/100: #FEE2E2;
+  --red\/200: #FECACA;
+  --red\/300: #FCA5A5;
+  --red\/400: #F87171;
+  --red\/500: #EF4444;
+  --red\/600: #DC2626;
+  --red\/700: #B91C1C;
+  --red\/800: #991B1B;
+  --red\/900: #7F1D1D;
+  --red\/950: #450A0A;
+  --orange\/50: #FFF7ED;
+  --orange\/100: #FFEDD5;
+  --orange\/200: #FED7AA;
+  --orange\/300: #FDBA74;
+  --orange\/400: #FB923C;
+  --orange\/500: #F97316;
+  --orange\/600: #EA580C;
+  --orange\/700: #C2410C;
+  --orange\/800: #9A3412;
+  --orange\/900: #7C2D12;
+  --orange\/950: #431407;
+  --amber\/50: #FFFBEB;
+  --amber\/100: #FEF3C7;
+  --amber\/200: #FDE68A;
+  --amber\/300: #FCD34D;
+  --amber\/400: #FBBF24;
+  --amber\/500: #F59E0B;
+  --amber\/600: #D97706;
+  --amber\/700: #B45309;
+  --amber\/800: #92400E;
+  --amber\/900: #78350F;
+  --amber\/950: #451A03;
+  --green\/50: #F0FDF4;
+  --green\/100: #DCFCE7;
+  --green\/200: #BBF7D0;
+  --green\/300: #86EFAC;
+  --green\/400: #4ADE80;
+  --green\/500: #22C55E;
+  --green\/600: #16A34A;
+  --green\/700: #15803D;
+  --green\/800: #166534;
+  --green\/900: #14532D;
+  --green\/950: #052E16;
+  --emerald\/50: #ECFDF5;
+  --emerald\/100: #D1FAE5;
+  --emerald\/200: #A7F3D0;
+  --emerald\/300: #6EE7B7;
+  --emerald\/400: #34D399;
+  --emerald\/500: #10B981;
+  --emerald\/600: #059669;
+  --emerald\/700: #047857;
+  --emerald\/800: #065F46;
+  --emerald\/900: #064E3B;
+  --emerald\/950: #022C22;
+  --teal\/50: #F0FDFA;
+  --teal\/100: #CCFBF1;
+  --teal\/200: #99F6E4;
+  --teal\/300: #5EEAD4;
+  --teal\/400: #2DD4BF;
+  --teal\/500: #14B8A6;
+  --teal\/600: #0D9488;
+  --teal\/700: #0F766E;
+  --teal\/800: #115E59;
+  --teal\/900: #134E4A;
+  --teal\/950: #042F2E;
+  --cyan\/50: #ECFEFF;
+  --cyan\/100: #CFFAFE;
+  --cyan\/200: #A5F3FC;
+  --cyan\/300: #67E8F9;
+  --cyan\/400: #22D3EE;
+  --cyan\/500: #06B6D4;
+  --cyan\/600: #0891B2;
+  --cyan\/700: #0E7490;
+  --cyan\/800: #155E75;
+  --cyan\/900: #164E63;
+  --cyan\/950: #083344;
+  --sky\/50: #F0F9FF;
+  --sky\/100: #E0F2FE;
+  --sky\/200: #BAE6FD;
+  --sky\/300: #7DD3FC;
+  --sky\/400: #38BDF8;
+  --sky\/500: #0EA5E9;
+  --sky\/600: #0284C7;
+  --sky\/700: #0369A1;
+  --sky\/800: #075985;
+  --sky\/900: #0C4A6E;
+  --sky\/950: #082F49;
+  --indigo\/50: #EEF2FF;
+  --indigo\/100: #E0E7FF;
+  --indigo\/200: #C7D2FE;
+  --indigo\/300: #A5B4FC;
+  --indigo\/400: #818CF8;
+  --indigo\/500: #6366F1;
+  --indigo\/600: #4F46E5;
+  --indigo\/700: #4338CA;
+  --indigo\/800: #3730A3;
+  --indigo\/900: #312E81;
+  --indigo\/950: #1E1B4B;
+  --violet\/50: #F5F3FF;
+  --violet\/100: #EDE9FE;
+  --violet\/200: #DDD6FE;
+  --violet\/300: #C4B5FD;
+  --violet\/400: #A78BFA;
+  --violet\/500: #8B5CF6;
+  --violet\/600: #7C3AED;
+  --violet\/700: #6D28D9;
+  --violet\/800: #5B21B6;
+  --violet\/900: #4C1D95;
+  --violet\/950: #2E1065;
+  --purple\/50: #FAF5FF;
+  --purple\/100: #F3E8FF;
+  --purple\/200: #E9D5FF;
+  --purple\/300: #D8B4FE;
+  --purple\/400: #C084FC;
+  --purple\/500: #A855F7;
+  --purple\/600: #9333EA;
+  --purple\/700: #7E22CE;
+  --purple\/800: #6B21A8;
+  --purple\/900: #581C87;
+  --purple\/950: #3B0764;
+  --fuchsia\/50: #FDF4FF;
+  --fuchsia\/100: #FAE8FF;
+  --fuchsia\/200: #F5D0FE;
+  --fuchsia\/300: #F0ABFC;
+  --fuchsia\/400: #E879F9;
+  --fuchsia\/500: #D946EF;
+  --fuchsia\/600: #C026D3;
+  --fuchsia\/700: #A21CAF;
+  --fuchsia\/800: #86198F;
+  --fuchsia\/900: #701A75;
+  --fuchsia\/950: #4A044E;
+  --pink\/50: #FDF2F8;
+  --pink\/100: #FCE7F3;
+  --pink\/200: #FBCFE8;
+  --pink\/300: #F9A8D4;
+  --pink\/400: #F472B6;
+  --pink\/500: #EC4899;
+  --pink\/600: #DB2777;
+  --pink\/700: #BE185D;
+  --pink\/800: #9D174D;
+  --pink\/900: #831843;
+  --pink\/950: #500724;
+  --rose\/50: #FFF1F2;
+  --rose\/100: #FFE4E6;
+  --rose\/200: #FECDD3;
+  --rose\/300: #FDA4AF;
+  --rose\/400: #FB7185;
+  --rose\/500: #F43F5E;
+  --rose\/600: #E11D48;
+  --rose\/700: #BE123C;
+  --rose\/800: #9F1239;
+  --rose\/900: #881337;
+  --rose\/950: #4C0519;
+  --lime\/50: #F7FEE7;
+  --lime\/100: #ECFCCB;
+  --lime\/200: #D9F99D;
+  --lime\/300: #BEF264;
+  --lime\/400: #A3E635;
+  --lime\/500: #84CC16;
+  --lime\/600: #65A30D;
+  --lime\/700: #4D7C0F;
+  --lime\/800: #3F6212;
+  --lime\/900: #365314;
+  --lime\/950: #1A2E05;
+  --yellow\/50: #FEFCE8;
+  --yellow\/100: #FEF9C3;
+  --yellow\/200: #FEF08A;
+  --yellow\/300: #FDE047;
+  --yellow\/400: #FACC15;
+  --yellow\/500: #EAB308;
+  --yellow\/600: #CA8A04;
+  --yellow\/700: #A16207;
+  --yellow\/800: #854D0E;
+  --yellow\/900: #713F12;
+  --yellow\/950: #422006;
+  --blue\/50: #EFF6FF;
+  --blue\/100: #DBEAFE;
+  --blue\/200: #BFDBFE;
+  --blue\/300: #93C5FD;
+  --blue\/400: #60A5FA;
+  --blue\/500: #3B82F6;
+  --blue\/600: #2563EB;
+  --blue\/700: #1D4ED8;
+  --blue\/800: #1E40AF;
+  --blue\/900: #1E3A8A;
+  --blue\/950: #172554;
+  --white: #FFF;
+  --black: #000;
+  --p-0: 0;
+  --px-0: 0;
+  --py-0: 0;
+  --pr-0: 0;
+  --pl-0: 0;
+  --pt-0: 0;
+  --pb-0: 0;
+  --p-px: 1;
+  --px-px: 1;
+  --py-px: 1;
+  --pt-px: 1;
+  --pr-px: 1;
+  --pl-px: 1;
+  --pb-px: 1;
+  --p-0\,5: 2;
+  --px-0\,5: 2;
+  --py-0\,5: 2;
+  --pr-0\,5: 2;
+  --pl-0\,5: 2;
+  --pt-0\,5: 2;
+  --pb-0\,5: 2;
+  --p-1: 4;
+  --px-1: 4;
+  --py-1: 4;
+  --pr-1: 4;
+  --pl-1: 4;
+  --pt-1: 4;
+  --pb-1: 4;
+  --p-1\,5: 6;
+  --px-1\,5: 6;
+  --py-1\,5: 6;
+  --pr-1\,5: 6;
+  --pl-1\,15: 6;
+  --pt-1\,5: 6;
+  --pb-1\,5: 6;
+  --p-2: 8;
+  --px-2: 8;
+  --py-2: 8;
+  --pr-2: 8;
+  --pl-2: 8;
+  --pt-2: 8;
+  --pb-2: 8;
+  --p-2\,5: 10;
+  --px-2\,5: 10;
+  --py-2\,5: 10;
+  --pr-2\,5: 10;
+  --pl-2\,5: 10;
+  --pt-2\,5: 10;
+  --pb-2\,5: 10;
+  --p-3: 12;
+  --px-3: 12;
+  --py-3: 12;
+  --pr-3: 12;
+  --pl-3: 12;
+  --pt-3: 12;
+  --pb-3: 12;
+  --p-3\,5: 14;
+  --px-3\,5: 14;
+  --py-3\,5: 14;
+  --pr-3\,5: 14;
+  --pl-3\,5: 14;
+  --pt-3\,5: 14;
+  --pb-3\,5: 14;
+  --p-4: 16;
+  --px-4: 16;
+  --py-4: 16;
+  --pr-4: 16;
+  --pl-4: 16;
+  --pt-4: 16;
+  --pb-4: 16;
+  --p-5: 20;
+  --px-5: 20;
+  --py-5: 20;
+  --pr-5: 20;
+  --pl-5: 20;
+  --pt-5: 20;
+  --pb-5: 20;
+  --p-6: 24;
+  --px-6: 24;
+  --py-6: 24;
+  --pr-6: 24;
+  --pl-6: 24;
+  --pt-6: 24;
+  --pb-6: 24;
+  --p-7: 28;
+  --px-7: 28;
+  --py-7: 28;
+  --pr-7: 28;
+  --pl-7: 28;
+  --pt-7: 28;
+  --pb-7: 28;
+  --p-8: 32;
+  --px-8: 32;
+  --py-8: 32;
+  --pr-8: 32;
+  --pl-8: 32;
+  --pt-8: 32;
+  --pb-8: 32;
+  --p-9: 36;
+  --px-9: 36;
+  --py-9: 36;
+  --pr-9: 36;
+  --pl-9: 36;
+  --pt-9: 36;
+  --pb-9: 36;
+  --p-10: 40;
+  --px-10: 40;
+  --py-10: 40;
+  --pr-10: 40;
+  --pl-10: 40;
+  --pt-10: 40;
+  --pb-10: 40;
+  --p-11: 44;
+  --px-11: 44;
+  --py-11: 44;
+  --pr-11: 44;
+  --pl-11: 44;
+  --pt-11: 44;
+  --pb-11: 44;
+  --p-12: 48;
+  --px-12: 48;
+  --py-12: 48;
+  --pr-12: 48;
+  --pl-12: 48;
+  --pt-12: 48;
+  --pb-12: 48;
+  --p-14: 56;
+  --px-14: 56;
+  --py-14: 56;
+  --pr-14: 56;
+  --pl-14: 56;
+  --pt-14: 56;
+  --pb-14: 56;
+  --p-16: 64;
+  --px-16: 64;
+  --py-16: 64;
+  --pr-16: 64;
+  --pt-16: 64;
+  --pl-16: 64;
+  --pb-16: 64;
+  --p-20: 80;
+  --px-20: 80;
+  --py-20: 80;
+  --pr-20: 80;
+  --pl-20: 80;
+  --pt-20: 80;
+  --pb-20: 80;
+  --p-24: 96;
+  --px-24: 96;
+  --py-24: 96;
+  --pr-24: 96;
+  --pl-24: 96;
+  --pt-24: 96;
+  --pb-24: 96;
+  --p-28: 112;
+  --px-28: 112;
+  --py-28: 112;
+  --pr-28: 112;
+  --pl-28: 112;
+  --pt-28: 112;
+  --pb-28: 112;
+  --p-32: 128;
+  --px-32: 128;
+  --py-32: 128;
+  --pr-32: 128;
+  --pl-32: 128;
+  --pt-32: 128;
+  --pb-32: 128;
+  --p-36: 144;
+  --px-36: 144;
+  --py-36: 144;
+  --pr-36: 144;
+  --pl-36: 144;
+  --pt-36: 144;
+  --pb-36: 144;
+  --p-40: 160;
+  --px-40: 160;
+  --py-40: 160;
+  --pr-40: 160;
+  --pl-40: 160;
+  --pt-40: 160;
+  --pb-40: 160;
+  --p-44: 176;
+  --px-44: 176;
+  --py-44: 176;
+  --pr-44: 176;
+  --pl-44: 176;
+  --pt-44: 176;
+  --pb-44: 176;
+  --p-48: 192;
+  --px-48: 192;
+  --py-48: 192;
+  --pr-48: 192;
+  --pl-48: 192;
+  --pt-48: 192;
+  --pb-48: 192;
+  --p-52: 208;
+  --px-52: 208;
+  --py-52: 208;
+  --pr-52: 208;
+  --pl-52: 208;
+  --pt-52: 208;
+  --pb-52: 208;
+  --p-56: 224;
+  --px-56: 224;
+  --py-56: 224;
+  --pr-56: 224;
+  --pl-56: 224;
+  --pt-56: 224;
+  --pb-56: 224;
+  --p-60: 240;
+  --px-60: 240;
+  --py-60: 240;
+  --pr-60: 240;
+  --pl-60: 240;
+  --pt-60: 240;
+  --pb-60: 240;
+  --p-64: 256;
+  --px-64: 256;
+  --py-64: 256;
+  --pr-64: 256;
+  --pl-64: 256;
+  --pt-64: 256;
+  --pb-64: 256;
+  --p-72: 288;
+  --px-72: 288;
+  --py-72: 288;
+  --pr-72: 288;
+  --pl-72: 288;
+  --pt-72: 288;
+  --pb-72: 288;
+  --p-80: 320;
+  --px-80: 320;
+  --py-80: 320;
+  --pr-80: 320;
+  --pl-80: 320;
+  --pt-80: 320;
+  --pb-80: 320;
+  --p-96: 384;
+  --px-96: 384;
+  --py-96: 384;
+  --pr-96: 384;
+  --pl-96: 384;
+  --pt-96: 384;
+  --pb-96: 384;
+  --space-x-0: 0;
+  --space-y-0: 0;
+  --space-x-0\,5: var(--2);
+  --space-y-0\,5: 2;
+  --space-x-1: 4;
+  --space-y-1: 4;
+  --space-x-1\,5: 6;
+  --space-y-1\,5: 6;
+  --space-x-2: 8;
+  --gap-0: 0;
+  --space-y-2: 8;
+  --space-x-2\,5: 10;
+  --gap-x-0: 0;
+  --gap-y-0: 0;
+  --gap-0\,5: var(--2);
+  --gap-x-0\,5: var(--2);
+  --gap-y-0\,5: 2;
+  --space-y-2\,5: 10;
+  --gap-1: 4;
+  --space-x-3: 12;
+  --gap-x-1: 4;
+  --space-y-3: 12;
+  --gap-y-1: 4;
+  --gap-1\,5: 6;
+  --space-x-3\,5: 14;
+  --gap-x-1\,5: 6;
+  --space-y-3\,5: 14;
+  --gap-y-1\,5: 6;
+  --space-x-4: 16;
+  --gap-2: 8;
+  --gap-x-2-2: 8;
+  --space-y-4: 16;
+  --gap-y-2: 8;
+  --gap-2\,5: 10;
+  --space-x-5: 20;
+  --gap-x-2\,5: 10;
+  --space-y-5: 20;
+  --gap-y-2\,5: 10;
+  --gap-3: 12;
+  --space-x-6: 24;
+  --gap-x-3: 12;
+  --gap-y-3: 12;
+  --space-y-6: 24;
+  --gap-3\,5: 14;
+  --gap-x-3\,5: 14;
+  --space-x-7: 28;
+  --space-y-7: 28;
+  --gap-y-3\,5: 14;
+  --gap-4: 16;
+  --space-x-8: 32;
+  --gap-x-4: 16;
+  --space-y-8: 32;
+  --gap-y-4: 16;
+  --gap-5: 20;
+  --space-x-9: 36;
+  --gap-x-5: 20;
+  --gap-y-5: 20;
+  --space-y-9: 36;
+  --gap-6: 24;
+  --gap-x-6: 24;
+  --space-x-10: 40;
+  --space-y-10: 40;
+  --gap-y-6: 24;
+  --gap-7: 28;
+  --space-x-11: 44;
+  --gap-x-7: 28;
+  --gap-y-7: 28;
+  --space-y-11: 44;
+  --gap-8: 32;
+  --space-x-12: 48;
+  --gap-x-8: 32;
+  --space-y-12: 48;
+  --gap-y-8: 32;
+  --gap-9: 36;
+  --gap-x-9: 36;
+  --space-x-14: 56;
+  --gap-y-9: 36;
+  --space-y-14: 56;
+  --gap-10: 40;
+  --gap-x-10: 40;
+  --space-x-16: 64;
+  --gap-y-10: 40;
+  --space-y-16: 64;
+  --gap-11: 44;
+  --space-x-20: 80;
+  --space-y-20: 80;
+  --space-x-24: 96;
+  --gap-x-11: 44;
+  --space-y-24: 96;
+  --gap-y-11: 44;
+  --gap-12: 48;
+  --gap-x-12: 48;
+  --space-x-28: 112;
+  --gap-y-12: 48;
+  --space-y-28: 112;
+  --gap-14: 56;
+  --gap-x-14: 56;
+  --space-x-32: 128;
+  --space-y-32: 128;
+  --gap-y-14: 56;
+  --gap-16: 64;
+  --space-x-36: 144;
+  --gap-x-16: 64;
+  --space-y-36: 144;
+  --gap-y-16: 64;
+  --gap-20: 80;
+  --gap-x-20: 80;
+  --space-x-40: 160;
+  --gap-y-20: 80;
+  --space-y-40: 160;
+  --gap-24: 96;
+  --gap-x-24: 96;
+  --space-x-44: 176;
+  --space-y-44: 176;
+  --gap-y-24: 96;
+  --gap-28: 112;
+  --gap-x-28: 112;
+  --space-x-48: 192;
+  --gap-y-28: 112;
+  --space-y-48: 192;
+  --gap-32: 128;
+  --space-x-52: 208;
+  --gap-x-32: 128;
+  --space-y-52: 208;
+  --gap-y-32: 128;
+  --gap-36: 144;
+  --space-x-56: 224;
+  --gap-x-36: 144;
+  --gap-y-36: 144;
+  --space-y-56: 224;
+  --gap-40: 160;
+  --space-x-60: 240;
+  --gap-x-40: 160;
+  --space-y-60: 240;
+  --gap-y-40: 160;
+  --gap-44: 176;
+  --space-x-64: 256;
+  --gap-x-44: 176;
+  --space-y-64: 256;
+  --gap-y-44: 176;
+  --gap-48: 192;
+  --gap-x-48: 192;
+  --space-x-72: 288;
+  --space-y-72: 288;
+  --gap-y-48: 192;
+  --gap-52: 208;
+  --space-x-80: 320;
+  --gap-x-52: 208;
+  --gap-y-52: 208;
+  --space-y-80: 320;
+  --gap-56: 224;
+  --space-x-96: 384;
+  --gap-x-56: 224;
+  --gap-y-56: 224;
+  --space-y-96: 384;
+  --gap-60: 240;
+  --gap-x-60: 240;
+  --gap-y-60: 240;
+  --gap-64: 256;
+  --rounded-xs: var(--2);
+  --gap-x-64: 256;
+  --gap-y-64: 256;
+  --rounded-sm: var(--4);
+  --gap-72: 288;
+  --gap-x-72: 288;
+  --rounded-md: 6;
+  --gap-y-72: 288;
+  --gap-80: 320;
+  --gap-x-80: 320;
+  --rounded-lg: 8;
+  --rounded-xl: 12;
+  --gap-y-80: 320;
+  --gap-96: 384;
+  --rounded-2xl: 16;
+  --gap-x-96: 384;
+  --gap-y-96: 384;
+  --rounded-3xl: 24;
+  --rounded-4xl: var(--32);
+  --rounded-none: var(--0);
+  --rounded-full: 9999;
+  --rounded-s-xs: var(--2);
+  --rounded-s-sm: var(--4);
+  --rounded-s-md: var(--6);
+  --m-0: 0;
+  --rounded-s-lg: var(--8);
+  --mx-0: 0;
+  --my-0: 0;
+  --mr-0: 0;
+  --ml-0: 0;
+  --mt-0: 0;
+  --mb-0: 0;
+  --m-px: 1;
+  --mx-px: 1;
+  --my-px: 1;
+  --mr-px: 1;
+  --ml-px: 1;
+  --mt-px: 1;
+  --mb-px: 1;
+  --m-0\,5: 2;
+  --mx-0\,5: 2;
+  --rounded-s-2xl: var(--16);
+  --my-0\,5: 2;
+  --mr-0\,5: 2;
+  --ml-0\,5: 2;
+  --mt-0\,5: 2;
+  --mb-0\,5: 2;
+  --m-1: 4;
+  --mx-1: 4;
+  --my-1: 4;
+  --rounded-s-3xl: var(--24);
+  --mr-1: 4;
+  --ml-1: 4;
+  --mt-1: 4;
+  --mb-1: 4;
+  --m-1\,5: 6;
+  --mx-1\,5: 6;
+  --my-1\,5: 6;
+  --mr-1\,5: 6;
+  --ml-1\,5: 6;
+  --mt-1\,5: 6;
+  --mb-1\,5: 6;
+  --m-2: 8;
+  --mx-2: 8;
+  --my-2: 8;
+  --mr-2: 8;
+  --ml-2: 8;
+  --mt-2: 8;
+  --mb-2: 8;
+  --m-2\,5: 10;
+  --mx-2\,5: 10;
+  --my-2\,5: 10;
+  --mr-2\,5: 10;
+  --ml-2\,5: 10;
+  --mt-2\,5: 10;
+  --mb-2\,5: 10;
+  --m-3: 12;
+  --mx-3: 12;
+  --my-3: 12;
+  --mr-3: 12;
+  --ml-3: 12;
+  --mt-3: 12;
+  --rounded-s-4xl: var(--32);
+  --mb-3: 12;
+  --m-3\,5: 14;
+  --mx-3\,5: 14;
+  --my-3\,5: 14;
+  --mr-3\,5: 14;
+  --ml-3\,5: 14;
+  --mt-3\,5: 14;
+  --mb-3\,5: 14;
+  --rounded-s-none: var(--0);
+  --m-4: 16;
+  --mx-4: 16;
+  --my-4: 16;
+  --mr-4: 16;
+  --rounded-s-full: var(--9999);
+  --ml-4: 16;
+  --rounded-e-xs: var(--2);
+  --mt-4: 16;
+  --mb-4: 16;
+  --m-5: 20;
+  --mx-5: 20;
+  --my-5: 20;
+  --mr-5: 20;
+  --ml-5: 20;
+  --mt-5: 20;
+  --mb-5: 20;
+  --m-6: 24;
+  --mx-6: 24;
+  --my-6: 24;
+  --mr-6: 24;
+  --ml-6: 24;
+  --mt-6: 24;
+  --mb-6: 24;
+  --m-7: 28;
+  --mx-7: 28;
+  --my-7: 28;
+  --mr-7: 28;
+  --ml-7: 28;
+  --mt-7: 28;
+  --mb-7: 28;
+  --m-8: 32;
+  --mx-8: 32;
+  --my-8: 32;
+  --mr-8: 32;
+  --rounded-e-sm: var(--4);
+  --ml-8: 32;
+  --rounded-e-md: var(--6);
+  --rounded-e-lg: var(--8);
+  --rounded-e-xl: var(--12);
+  --mt-8: 32;
+  --rounded-e-2xl: var(--16);
+  --rounded-e-3xl: var(--24);
+  --rounded-e-4xl: var(--32);
+  --mb-8: 32;
+  --rounded-e-none: var(--0);
+  --rounded-e-full: var(--9999);
+  --m-9: 36;
+  --rounded-t-xs: var(--2);
+  --mx-9: 36;
+  --my-9: 36;
+  --mr-9: 36;
+  --ml-9: 36;
+  --mt-9: 36;
+  --mb-9: 36;
+  --m-10: 40;
+  --rounded-t-sm: var(--4);
+  --mx-10: 40;
+  --my-10: 40;
+  --mr-10: 40;
+  --ml-10: 40;
+  --mt-10: 40;
+  --mb-10: 40;
+  --m-11: 44;
+  --mx-11: 44;
+  --my-11: 44;
+  --mr-11: 44;
+  --ml-11: 44;
+  --mt-11: 44;
+  --mb-11: 44;
+  --m-12: 48;
+  --mx-12: 48;
+  --my-12: 48;
+  --mr-12: 48;
+  --ml-12: 48;
+  --mt-12: 48;
+  --mb-12: 48;
+  --m-14: 56;
+  --mx-14: 56;
+  --my-14: 56;
+  --mr-14: 56;
+  --ml-14: 56;
+  --mt-14: 56;
+  --mb-14: 56;
+  --m-16: 64;
+  --mx-16: 64;
+  --my-16: 64;
+  --mr-16: 64;
+  --ml-16: 64;
+  --mt-16: 64;
+  --mb-16: 64;
+  --m-20: 80;
+  --mx-20: 80;
+  --my-20: 80;
+  --mr-20: 80;
+  --ml-20: 80;
+  --mt-20: 80;
+  --mb-20: 80;
+  --m-24: 96;
+  --mx-24: 96;
+  --my-24: 96;
+  --mr-24: 96;
+  --ml-24: 96;
+  --mt-24: 96;
+  --mb-24: 96;
+  --m-28: 112;
+  --mx-28: 112;
+  --my-28: 112;
+  --mr-28: 112;
+  --ml-28: 112;
+  --mt-28: 112;
+  --mb-28: 112;
+  --m-32: 128;
+  --mx-32: 128;
+  --rounded-t-md: var(--6);
+  --my-32: 128;
+  --rounded-t-lg: var(--8);
+  --mr-32: 128;
+  --ml-32: 128;
+  --rounded-t-xl: var(--12);
+  --rounded-t-2xl: var(--16);
+  --mt-32: 128;
+  --rounded-t-3xl: var(--24);
+  --mb-32: 128;
+  --rounded-t-4xl: var(--32);
+  --m-36: 144;
+  --mx-36: 144;
+  --rounded-t-none: var(--0);
+  --rounded-t-full: var(--9999);
+  --my-36: 144;
+  --rounded-r-xs: var(--2);
+  ---0\,8: -0.800000011920929;
+  --mr-36: 144;
+  ---0\,4: -0.4000000059604645;
+  --rounded-r-sm: var(--4);
+  --ml-36: 144;
+  --0: 0;
+  --0\,4: 0.4000000059604645;
+  --0\,5: 0.5;
+  --0\,75: 0.75;
+  --0\,8: 0.800000011920929;
+  --1: 1;
+  --mt-36: 144;
+  --rounded-r-md: var(--6);
+  --1\,25: 1.25;
+  --1\,5: 1.5;
+  --1\,6: 1.600000023841858;
+  --1\,75: 1.75;
+  --2: 2;
+  --rounded-r-lg: var(--8);
+  --mb-36: 144;
+  --2\,25: 2.25;
+  --2\,5: 2.5;
+  --2\,75: 2.75;
+  --3: 3;
+  --m-40: 160;
+  --4: 4;
+  --rounded-r-xl: var(--12);
+  --mx-40: 160;
+  --rounded-r-2xl: var(--16);
+  --rounded-r-3xl: var(--24);
+  --5: 5;
+  --my-40: 160;
+  --mr-40: 160;
+  --rounded-r-4xl: var(--32);
+  --ml-40: 160;
+  --rounded-r-none: var(--0);
+  --6: 6;
+  --8: 8;
+  --10: 10;
+  --12: 12;
+  --14: 14;
+  --15: 15;
+  --rounded-r-full: var(--9999);
+  --mt-40: 160;
+  --16: 16;
+  --rounded-b-xs: var(--2);
+  --mb-40: 160;
+  --m-44: 176;
+  --rounded-b-sm: var(--4);
+  --rounded-b-md: var(--6);
+  --mx-44: 176;
+  --18: 18;
+  --20: 20;
+  --22: 22;
+  --24: 24;
+  --26: 26;
+  --25: 25;
+  --28: 28;
+  --30: 30;
+  --32: 32;
+  --35: 35;
+  --36: 36;
+  --40: 40;
+  --44: 44;
+  --45: 45;
+  --48: 48;
+  --50: 50;
+  --55: 55;
+  --56: 56;
+  --my-44: 176;
+  --rounded-b-lg: var(--8);
+  --mr-44: 176;
+  --rounded-b-xl: var(--12);
+  --60: 60;
+  --ml-44: 176;
+  --rounded-b-2xl: var(--16);
+  --64: 64;
+  --mt-44: 176;
+  --rounded-b-3xl: var(--24);
+  --mb-44: 176;
+  --rounded-b-4xl: var(--32);
+  --m-48: 192;
+  --rounded-b-none: var(--0);
+  --mx-48: 192;
+  --rounded-b-full: var(--9999);
+  --rounded-1-xs: var(--2);
+  --my-48: 192;
+  --rounded-1-sm: var(--4);
+  --mr-48: 192;
+  --rounded-1-md: var(--6);
+  --ml-48: 192;
+  --65: 65;
+  --70: 70;
+  --72: 72;
+  --75: 75;
+  --80: 80;
+  --85: 85;
+  --90: 90;
+  --95: 95;
+  --96: 96;
+  --100: 100;
+  --112: 112;
+  --128: 128;
+  --144: 144;
+  --160: 160;
+  --176: 176;
+  --mt-48: 192;
+  --192: 192;
+  --rounded-1-lg: var(--8);
+  --rounded-1-xl: var(--12);
+  --mb-48: 192;
+  --rounded-1-2xl: var(--16);
+  --m-52: 208;
+  --rounded-1-3xl: var(--24);
+  --mx-52: 208;
+  --rounded-1-4xl: var(--32);
+  --my-52: 208;
+  --rounded-1-none: var(--0);
+  --mr-52: 208;
+  --rounded-1-full: var(--9999);
+  --ml-52: 208;
+  --200: 200;
+  --208: 208;
+  --224: 224;
+  --240: 240;
+  --256: 256;
+  --288: 288;
+  --300: 300;
+  --320: 320;
+  --384: 384;
+  --400: 400;
+  --448: 448;
+  --500: 500;
+  --512: 512;
+  --576: 576;
+  --600: 600;
+  --640: 640;
+  --672: 672;
+  --700: 700;
+  --768: 768;
+  --800: 800;
+  --896: 896;
+  --900: 900;
+  --mt-52: 208;
+  --rounded-ss-xs: var(--2);
+  --rounded-ss-sm: var(--4);
+  --mb-52: 208;
+  --rounded-ss-md: var(--6);
+  --m-56: 224;
+  --rounded-ss-lg: var(--8);
+  --mx-56: 224;
+  --my-56: 224;
+  --rounded-ss-xl: var(--12);
+  --rounded-ss-2xl: var(--16);
+  --mr-56: 224;
+  --ml-56: 224;
+  --rounded-ss-3xl: var(--24);
+  --1024: 1024;
+  --1152: 1152;
+  --1280: 1280;
+  --1536: 1536;
+  --9999: 9999;
+  --rounded-ss-4xl: var(--32);
+  --mt-56: 224;
+  --mb-56: 224;
+  --rounded-ss-none: var(--0);
+  --m-60: 240;
+  --rounded-ss-full: var(--9999);
+  --rounded-se-xs: var(--2);
+  --mx-60: 240;
+  --my-60: 240;
+  --rounded-se-sm: var(--4);
+  --mr-60: 240;
+  --rounded-se-md: var(--6);
+  --rounded-se-lg: var(--8);
+  --ml-60: 240;
+  --rounded-se-xl: var(--12);
+  --mt-60: 240;
+  --rounded-se-2xl: var(--16);
+  --mb-60: 240;
+  --m-64: 256;
+  --rounded-se-3xl: var(--24);
+  --rounded-se-4xl: var(--32);
+  --mx-64: 256;
+  --my-64: 256;
+  --rounded-se-none: var(--0);
+  --mr-64: 256;
+  --rounded-se-full: var(--9999);
+  --rounded-ee-xs: var(--2);
+  --ml-64: 256;
+  --mt-64: 256;
+  --rounded-ee-sm: var(--4);
+  --mb-64: 256;
+  --rounded-ee-md: var(--6);
+  --m-72: 288;
+  --rounded-ee-lg: var(--8);
+  --mx-72: 288;
+  --rounded-ee-xl: var(--12);
+  --my-72: 288;
+  --rounded-ee-2xl: var(--16);
+  --rounded-ee-3xl: var(--24);
+  --mr-72: 288;
+  --rounded-ee-4xl: var(--32);
+  --ml-72: 288;
+  --mt-72: 288;
+  --rounded-ee-none: var(--0);
+  --mb-72: 288;
+  --rounded-ee-full: var(--9999);
+  --m-80: 320;
+  --rounded-es-xs: var(--2);
+  --mx-80: 320;
+  --rounded-es-sm: var(--4);
+  --rounded-es-md: var(--6);
+  --my-80: 320;
+  --mr-80: 320;
+  --rounded-es-lg: var(--8);
+  --rounded-es-xl: var(--12);
+  --ml-80: 320;
+  --mt-80: 320;
+  --rounded-es-2xl: var(--16);
+  --mb-80: 320;
+  --rounded-es-3xl: var(--24);
+  --rounded-es-4xl: var(--32);
+  --m-96: 384;
+  --mx-96: 384;
+  --rounded-es-none: var(--0);
+  --my-96: 384;
+  --rounded-es-full: var(--9999);
+  --rounded-tl-xs: var(--0);
+  --mr-96: 384;
+  --rounded-tl-sm: var(--4);
+  --ml-96: 384;
+  --mt-96: 384;
+  --rounded-tl-md: var(--6);
+  --rounded-tl-lg: var(--8);
+  --mb-96: 384;
+  --rounded-tl-xl: var(--12);
+  --rounded-tl-2xl: var(--16);
+  --rounded-tl-3xl: var(--24);
+  --rounded-tl-4xl: var(--32);
+  --rounded-tl-none: var(--0);
+  --rounded-tl-full: var(--9999);
+  --rounded-tr-xs: var(--2);
+  --rounded-tr-sm: var(--4);
+  --rounded-tr-md: var(--6);
+  --rounded-tr-lg: var(--8);
+  --rounded-tr-xl: var(--12);
+  --rounded-tr-2xl: var(--16);
+  --rounded-tr-3xl: var(--24);
+  --rounded-tr-4xl: var(--32);
+  --rounded-tr-none: var(--0);
+  --rounded-tr-full: var(--9999);
+  --rounded-br-xs: var(--2);
+  --rounded-br-sm: var(--4);
+  --rounded-br-md: var(--6);
+  --rounded-br-lg: var(--8);
+  --rounded-br-xl: var(--12);
+  --rounded-br-2xl: var(--16);
+  --rounded-br-3xl: var(--24);
+  --rounded-br-4xl: var(--32);
+  --rounded-br-none: var(--0);
+  --rounded-br-full: var(--9999);
+  --rounded-bl-xs: var(--2);
+  --rounded-bl-sm: var(--4);
+  --rounded-bl-md: var(--6);
+  --rounded-bl-lg: var(--8);
+  --rounded-bl-xl: var(--12);
+  --rounded-bl-2xl: var(--16);
+  --rounded-bl-3xl: var(--24);
+  --rounded-bl-4xl: var(--32);
+  --rounded-bl-none: var(--0);
+  --rounded-bl-full: var(--9999);
+  --background: var(--white);
+  --foreground: var(--neutral\/950);
+  --card: var(--white);
+  --card-foreground: var(--neutral\/950);
+  --popover: var(--white);
+  --popover-foreground: var(--neutral\/950);
+  --primary: var(--neutral\/900);
+  --primary-foreground: var(--neutral\/50);
+  --secondary: var(--neutral\/100);
+  --secondary-foreground: var(--neutral\/950);
+  --muted: var(--neutral\/100);
+  --muted-foreground: var(--neutral\/500);
+  --accent: var(--neutral\/100);
+  --accent-foreground: var(--neutral\/900);
+  --destructive: var(--red\/600);
+  --border: var(--neutral\/200);
+  --input: var(--neutral\/200);
+  --ring: var(--neutral\/500);
+  --chart-1: var(--blue\/8);
+  --chart-2: var(--blue\/9);
+  --chart-3: var(--blue\/10);
+  --chart-4: var(--blue\/11);
+  --chart-5: var(--blue\/12);
+  --sidebar: var(--neutral\/50);
+  --sidebar-foreground: var(--neutral\/950);
+  --sidebar-primary: var(--neutral\/900);
+  --sidebar-primary-foreground: var(--neutral\/50);
+  --sidebar-accent: var(--neutral\/100);
+  --sidebar-accent-foreground: var(--neutral\/900);
+  --sidebar-border: var(--neutral\/200);
+  --sidebar-ring: var(--neutral\/500);
+  --border-0: var(--0);
+  --border-2: var(--1);
+  --border-2-2: var(--2);
+  --border-4: var(--4);
+  --stroke-0\,5: var(--0\,5);
+  --border-8: var(--8);
+  --stroke-0\,75: var(--0\,75);
+  --stroke-1: var(--1);
+  --stroke-1\,25: var(--1\,25);
+  --border-x-0: var(--0);
+  --stroke-1\,5: var(--1\,5);
+  --border-x: var(--1);
+  --stroke-1\,75: var(--1\,75);
+  --stroke-2: var(--2);
+  --border-x-2: var(--2);
+  --border-x-4: var(--4);
+  --stroke-2\,25: var(--2\,25);
+  --stroke-2\,5: var(--2\,5);
+  --border-x-8: var(--8);
+  --stroke-2\,75: var(--2\,75);
+  --border-y-0: var(--0);
+  --stroke-3: var(--3);
+  --border-y: var(--1);
+  --border-y-2: var(--2);
+  --border-y-4: var(--4);
+  --border-y-8: var(--8);
+  --border-s-0: var(--0);
+  --border-s: var(--1);
+  --border-s-2: var(--2);
+  --border-s-4: var(--4);
+  --border-s-8: var(--8);
+  --border-e-0: var(--0);
+  --background-color: var(--black\/5);
+  --border-e: var(--1);
+  --border-e-2: var(--2);
+  --border-e-4: var(--4);
+  --border-e-8: var(--8);
+  --border-t-0: var(--0);
+  --border-t: var(--1);
+  --border-t-2: var(--2);
+  --border-t-4: var(--4);
+  --border-t-8: var(--8);
+  --border-r-0: var(--0);
+  --border-r: var(--1);
+  --border-r-2: var(--2);
+  --border-r-4: var(--4);
+  --border-r-8: var(--8);
+  --border-b-0: var(--0);
+  --border-b: var(--1);
+  --border-b-2: var(--2);
+  --border-b-4: var(--4);
+  --border-b-8: var(--8);
+  --border-l-0: var(--0);
+  --border-l: var(--1);
+  --border-l-2: var(--2);
+  --border-l-4: var(--4);
+  --border-l-8: var(--8);
+  --size\/xs: var(--12);
+  --size\/sm: var(--14);
+  --size\/base: var(--16);
+  --size\/lg: var(--18);
+  --size\/xl: var(--20);
+  --size\/2xl: var(--24);
+  --size\/3xl: var(--30);
+  --size\/4xl: var(--36);
+  --size\/5xl: var(--48);
+  --size\/6xl: var(--60);
+  --size\/7xl: var(--72);
+  --size\/8xl: var(--96);
+  --size\/9xl: var(--128);
+  --weight\/thin: var(--100);
+  --weight\/extralight: var(--200);
+  --weight\/light: var(--300);
+  --weight\/normal: var(--400);
+  --weight\/medium: var(--500);
+  --weight\/semibold: var(--600);
+  --weight\/bold: var(--700);
+  --weight\/extrabold: var(--800);
+  --weight\/black: var(--900);
+  --leading\/3: var(--12);
+  --leading\/4: var(--16);
+  --leading\/5: var(--20);
+  --leading\/6: var(--24);
+  --leading\/7: var(--28);
+  --leading\/8: var(--32);
+  --leading\/9: var(--36);
+  --leading\/10: var(--40);
+  --leading\/12: var(--48);
+  --leading\/15: var(--60);
+  --leading\/18: var(--72);
+  --leading\/24: var(--96);
+  --leading\/32: var(--128);
+  --tracking\/tighter: var(---0\,8);
+  --tracking\/tight: var(---0\,4);
+  --tracking\/normal: var(--0);
+  --tracking\/wide: var(--0\,4);
+  --tracking\/wider: var(--0\,8);
+  --tracking\/widest: var(--1\,6);
+  --h-0: var(--0);
+  --h-px: var(--1);
+  --h-0\,5: var(--2);
+  --h-1: var(--4);
+  --h-2: var(--8);
+  --h-2\,5: var(--10);
+  --h-3: var(--12);
+  --h-3\,5: var(--14);
+  --h-4: var(--16);
+  --h-5: var(--20);
+  --h-6: var(--24);
+  --h-7: var(--28);
+  --h-8: var(--32);
+  --h-10: var(--40);
+  --h-12: var(--48);
+  --h-14: var(--56);
+  --h-16: var(--64);
+  --h-18: var(--72);
+  --h-20: var(--80);
+  --h-24: var(--96);
+  --h-48: var(--192);
+  --h-72: var(--288);
+  --h-96: var(--384);
+  --max-h-0: var(--0);  /* Utilities for setting the maximum height of an element. */
+  --max-h-px: var(--1);  /* Utilities for setting the maximum height of an element. */
+  --max-h-0\,5: var(--2);  /* Utilities for setting the maximum height of an element. */
+  --max-h-1: var(--4);  /* Utilities for setting the maximum height of an element. */
+  --max-h-1\,5: var(--6);  /* Utilities for setting the maximum height of an element. */
+  --max-h-2: var(--8);  /* Utilities for setting the maximum height of an element. */
+  --max-h-2\,5: var(--10);  /* Utilities for setting the maximum height of an element. */
+  --max-h-3: var(--12);  /* Utilities for setting the maximum height of an element. */
+  --max-h-3\,5: var(--14);  /* Utilities for setting the maximum height of an element. */
+  --max-h-4: var(--16);  /* Utilities for setting the maximum height of an element. */
+  --max-h-5: var(--20);  /* Utilities for setting the maximum height of an element. */
+  --max-h-6: var(--24);  /* Utilities for setting the maximum height of an element. */
+  --max-h-7: var(--28);  /* Utilities for setting the maximum height of an element. */
+  --max-h-8: var(--32);  /* Utilities for setting the maximum height of an element. */
+  --max-h-9: var(--36);  /* Utilities for setting the maximum height of an element. */
+  --max-h-10: var(--40);  /* Utilities for setting the maximum height of an element. */
+  --max-h-11: var(--44);  /* Utilities for setting the maximum height of an element. */
+  --max-h-12: var(--48);  /* Utilities for setting the maximum height of an element. */
+  --max-h-14: var(--56);  /* Utilities for setting the maximum height of an element. */
+  --max-h-16: var(--64);  /* Utilities for setting the maximum height of an element. */
+  --max-h-20: var(--80);  /* Utilities for setting the maximum height of an element. */
+  --max-h-24: var(--96);  /* Utilities for setting the maximum height of an element. */
+  --max-h-28: var(--112);  /* Utilities for setting the maximum height of an element. */
+  --max-h-32: var(--128);  /* Utilities for setting the maximum height of an element. */
+  --max-h-36: var(--144);  /* Utilities for setting the maximum height of an element. */
+  --max-h-40: var(--160);  /* Utilities for setting the maximum height of an element. */
+  --max-h-44: var(--176);  /* Utilities for setting the maximum height of an element. */
+  --max-h-48: var(--192);  /* Utilities for setting the maximum height of an element. */
+  --max-h-52: var(--208);  /* Utilities for setting the maximum height of an element. */
+  --max-h-56: var(--224);  /* Utilities for setting the maximum height of an element. */
+  --max-h-60: var(--240);  /* Utilities for setting the maximum height of an element. */
+  --max-h-64: var(--256);  /* Utilities for setting the maximum height of an element. */
+  --max-h-72: var(--288);  /* Utilities for setting the maximum height of an element. */
+  --max-h-80: var(--320);  /* Utilities for setting the maximum height of an element. */
+  --max-h-96: var(--384);  /* Utilities for setting the maximum height of an element. */
+  --max-w-0: var(--0);  /* Utilities for setting the maximum width of an element. */
+  --max-w-px: var(--1);  /* Utilities for setting the maximum width of an element. */
+  --max-w-0\,5: var(--2);  /* Utilities for setting the maximum width of an element. */
+  --max-w-1: var(--4);  /* Utilities for setting the maximum width of an element. */
+  --max-w-1\,5: var(--6);  /* Utilities for setting the maximum width of an element. */
+  --max-w-2: var(--8);  /* Utilities for setting the maximum width of an element. */
+  --max-w-2\,5: var(--10);  /* Utilities for setting the maximum width of an element. */
+  --max-w-3: var(--12);  /* Utilities for setting the maximum width of an element. */
+  --max-w-4: var(--16);  /* Utilities for setting the maximum width of an element. */
+  --max-w-5: var(--20);  /* Utilities for setting the maximum width of an element. */
+  --max-w-6: var(--24);  /* Utilities for setting the maximum width of an element. */
+  --max-w-7: var(--28);  /* Utilities for setting the maximum width of an element. */
+  --max-w-8: var(--32);  /* Utilities for setting the maximum width of an element. */
+  --max-w-9: var(--36);  /* Utilities for setting the maximum width of an element. */
+  --max-w-10: var(--40);  /* Utilities for setting the maximum width of an element. */
+  --max-w-11: var(--44);  /* Utilities for setting the maximum width of an element. */
+  --max-w-12: var(--48);  /* Utilities for setting the maximum width of an element. */
+  --max-w-14: var(--56);  /* Utilities for setting the maximum width of an element. */
+  --max-w-16: var(--64);  /* Utilities for setting the maximum width of an element. */
+  --max-w-20: var(--80);  /* Utilities for setting the maximum width of an element. */
+  --max-w-24: var(--96);  /* Utilities for setting the maximum width of an element. */
+  --max-w-28: var(--112);  /* Utilities for setting the maximum width of an element. */
+  --max-w-32: var(--128);  /* Utilities for setting the maximum width of an element. */
+  --max-w-36: var(--144);  /* Utilities for setting the maximum width of an element. */
+  --max-w-40: var(--160);  /* Utilities for setting the maximum width of an element. */
+  --max-w-44: var(--176);  /* Utilities for setting the maximum width of an element. */
+  --max-w-48: var(--192);  /* Utilities for setting the maximum width of an element. */
+  --max-w-52: var(--208);  /* Utilities for setting the maximum width of an element. */
+  --max-w-56: var(--224);  /* Utilities for setting the maximum width of an element. */
+  --max-w-60: var(--240);  /* Utilities for setting the maximum width of an element. */
+  --max-w-64: var(--256);  /* Utilities for setting the maximum width of an element. */
+  --max-w-72: var(--288);  /* Utilities for setting the maximum width of an element. */
+  --max-w-80: var(--320);  /* Utilities for setting the maximum width of an element. */
+  --max-w-96: var(--384);  /* Utilities for setting the maximum width of an element. */
+  --max-w-xs: var(--320);  /* Utilities for setting the maximum width of an element. */
+  --max-w-sm: var(--384);
+  --max-w-md: var(--448);
+  --max-w-lg: var(--512);
+  --max-w-xl: var(--576);
+  --max-w-2xl: var(--672);
+  --max-w-3xl: var(--768);
+  --max-w-4xl: var(--896);
+  --max-w-5xl: var(--1024);
+  --max-w-6xl: var(--1152);
+  --max-w-7xl: var(--1280);  /* Utilities for setting the maximum width of an element. */
+  --max-w-none: var(--0);  /* Utilities for setting the maximum width of an element. */
+  --max-w-screen-sm: var(--640);  /* The max-w-screen-{breakpoint} classes can be used to give an element a max-width matching a specific breakpoint. These values are automatically derived from the theme.screens section of your tailwind.config.js file. */
+  --max-w-screen-md: var(--768);  /* The max-w-screen-{breakpoint} classes can be used to give an element a max-width matching a specific breakpoint. These values are automatically derived from the theme.screens section of your tailwind.config.js file. */
+  --max-w-screen-lg: var(--1024);  /* The max-w-screen-{breakpoint} classes can be used to give an element a max-width matching a specific breakpoint. These values are automatically derived from the theme.screens section of your tailwind.config.js file. */
+  --max-w-screen-xl: var(--1280);  /* The max-w-screen-{breakpoint} classes can be used to give an element a max-width matching a specific breakpoint. These values are automatically derived from the theme.screens section of your tailwind.config.js file. */
+  --max-w-screen-2xl: var(--1536);  /* The max-w-screen-{breakpoint} classes can be used to give an element a max-width matching a specific breakpoint. These values are automatically derived from the theme.screens section of your tailwind.config.js file. */
+  --gray\/1: #FCFCFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --gray\/2: #F9F9F9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --gray\/3: #F0F0F0;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --gray\/4: #E8E8E8;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --gray\/5: #E0E0E0;  /* Interactive components Pairs with step 12 labels */
+  --gray\/6: #D9D9D9;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gray\/7: #CECECE;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gray\/8: #BBB;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gray\/9: #8D8D8D;  /* Solid colors                             Pairs with white text */
+  --gray\/10: #838383;  /* Solid colors                             Pairs with white text */
+  --gray\/11: #646464;  /* Accessible text                    Pairs with background colors */
+  --gray\/12: #202020;  /* Accessible text                    Pairs with background colors */
+  --mauve\/1: #FDFCFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --mauve\/2: #FAF9FB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --mauve\/3: #F2EFF3;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --mauve\/4: #EAE7EC;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --mauve\/5: #E3DFE6;  /* Interactive components Pairs with step 12 labels */
+  --mauve\/6: #DBD8E0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mauve\/7: #D0CDD7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mauve\/8: #BCBAC7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mauve\/9: #8E8C99;  /* Solid colors                             Pairs with white text */
+  --mauve\/10: #84828E;  /* Solid colors                             Pairs with white text */
+  --mauve\/11: #65636D;  /* Accessible text                    Pairs with background colors */
+  --mauve\/12: #211F26;  /* Accessible text                    Pairs with background colors */
+  --slate\/1: #FCFCFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --slate\/2: #F9F9FB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --slate\/3: #F0F0F3;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --slate\/4: #E8E8EC;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --slate\/5: #E0E1E6;  /* Interactive components Pairs with step 12 labels */
+  --slate\/6: #D9D9E0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --slate\/7: #CDCED6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --slate\/8: #B9BBC6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --slate\/9: #8B8D98;  /* Solid colors                             Pairs with white text */
+  --slate\/10: #80838D;  /* Solid colors                             Pairs with white text */
+  --slate\/11: #60646C;  /* Accessible text                    Pairs with background colors */
+  --slate\/12: #1C2024;  /* Accessible text                    Pairs with background colors */
+  --sage\/1: #FBFDFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --sage\/2: #F7F9F8;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --sage\/3: #EEF;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --sage\/4: #E6E9E8;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --sage\/5: #DFE2E0;  /* Interactive components Pairs with step 12 labels */
+  --sage\/6: #D7DAD9;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sage\/7: #CBCFCD;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sage\/8: #B8BCBA;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sage\/9: #868E8B;  /* Solid colors                             Pairs with white text */
+  --sage\/10: #7C8481;  /* Solid colors                             Pairs with white text */
+  --sage\/11: #5F6563;  /* Accessible text                    Pairs with background colors */
+  --sage\/12: #1A211E;  /* Accessible text                    Pairs with background colors */
+  --opacity-0: var(--0);  /* Controlling element opacity */
+  --opacity-5: var(--5);  /* Controlling element opacity */
+  --opacity-10: var(--10);  /* Controlling element opacity */
+  --opacity-15: var(--15);  /* Controlling element opacity */
+  --opacity-20: var(--20);  /* Controlling element opacity */
+  --opacity-25: var(--25);  /* Controlling element opacity */
+  --opacity-30: var(--30);  /* Controlling element opacity */
+  --opacity-35: var(--35);  /* Controlling element opacity */
+  --opacity-40: var(--40);  /* Controlling element opacity */
+  --opacity-45: var(--45);  /* Controlling element opacity */
+  --opacity-50: var(--50);  /* Controlling element opacity */
+  --opacity-55: var(--55);  /* Controlling element opacity */
+  --opacity-60: var(--60);  /* Controlling element opacity */
+  --opacity-65: var(--65);  /* Controlling element opacity */
+  --opacity-70: var(--70);  /* Controlling element opacity */
+  --opacity-75: var(--75);  /* Controlling element opacity */
+  --opacity-80: var(--80);  /* Controlling element opacity */
+  --opacity-85: var(--85);  /* Controlling element opacity */
+  --opacity-90: var(--90);  /* Controlling element opacity */
+  --opacity-95: var(--95);  /* Controlling element opacity */
+  --opacity-100: var(--100);  /* Controlling element opacity */
+  --olive\/1: #FCFDFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --olive\/2: #F8FAF8;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --olive\/3: #EFF1EF;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --olive\/4: #E7E9E7;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --olive\/5: #DFE2DF;  /* Interactive components Pairs with step 12 labels */
+  --olive\/6: #D7DAD7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --olive\/7: #CCCFCC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --olive\/8: #B9BCB8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --olive\/9: #898E87;  /* Solid colors                             Pairs with white text */
+  --olive\/10: #7F847D;  /* Solid colors                             Pairs with white text */
+  --olive\/11: #60655F;  /* Accessible text                    Pairs with background colors */
+  --olive\/12: #1D211C;  /* Accessible text                    Pairs with background colors */
+  --sand\/1: #FDFDFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --sand\/2: #F9F9F8;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --sand\/3: #F1F0EF;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --sand\/4: #E9E8E6;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --sand\/5: #E2E1DE;  /* Interactive components Pairs with step 12 labels */
+  --sand\/6: #DAD9D6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sand\/7: #CFCECA;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sand\/8: #BCBBB5;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sand\/9: #8D8D86;  /* Solid colors                             Pairs with white text */
+  --sand\/10: #82827C;  /* Solid colors                             Pairs with white text */
+  --sand\/11: #63635E;  /* Accessible text                    Pairs with background colors */
+  --sand\/12: #21201C;  /* Accessible text                    Pairs with background colors */
+  --tomato\/1: #FFFCFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --tomato\/2: #FFF8F7;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --tomato\/3: #FEEBE7;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --tomato\/4: #FFDCD3;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --tomato\/5: #FFCDC2;  /* Interactive components Pairs with step 12 labels */
+  --tomato\/6: #FDBDAF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --tomato\/7: #F5A898;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --tomato\/8: #EC8E7B;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --tomato\/9: #E54D2E;  /* Solid colors                             Pairs with white text */
+  --tomato\/10: #DD4425;  /* Solid colors                             Pairs with white text */
+  --tomato\/11: #D13415;  /* Accessible text                    Pairs with background colors */
+  --tomato\/12: #5C271F;  /* Accessible text                    Pairs with background colors */
+  --red\/1: #FFFCFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --red\/2: #FFF7F7;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --red\/3: #FEEBEC;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --red\/4: #FFDBDC;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --red\/5: #FFCDCE;  /* Interactive components Pairs with step 12 labels */
+  --red\/6: #FDBDBE;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --red\/7: #F4A9AA;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --red\/8: #EB8E90;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --red\/9: #E5484D;  /* Solid colors                             Pairs with white text */
+  --red\/10: #DC3E42;  /* Solid colors                             Pairs with white text */
+  --red\/11: #CE2C31;  /* Accessible text                    Pairs with background colors */
+  --red\/12: #641723;  /* Accessible text                    Pairs with background colors */
+  --ruby\/1: #FFFCFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --ruby\/2: #FFF7F8;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --ruby\/3: #FEEAED;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --ruby\/4: #FFDCE1;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --ruby\/5: #FFCED6;  /* Interactive components Pairs with step 12 labels */
+  --ruby\/6: #F8BFC8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --ruby\/7: #EFACB8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --ruby\/8: #E592A3;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --ruby\/9: #E54666;  /* Solid colors                             Pairs with white text */
+  --ruby\/10: #DC3B5D;  /* Solid colors                             Pairs with white text */
+  --ruby\/11: #CA244D;  /* Accessible text                    Pairs with background colors */
+  --ruby\/12: #64172B;  /* Accessible text                    Pairs with background colors */
+  --crimson\/1: #FFFCFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --crimson\/2: #FEF7F9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --crimson\/3: #FFE9F0;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --crimson\/4: #FEDCE7;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --crimson\/5: #FACEDD;  /* Interactive components Pairs with step 12 labels */
+  --crimson\/6: #F3BED1;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --crimson\/7: #EAACC3;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --crimson\/8: #E093B2;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --crimson\/9: #E93D82;  /* Solid colors                             Pairs with white text */
+  --crimson\/10: #DF3478;  /* Solid colors                             Pairs with white text */
+  --crimson\/11: #CB1D63;  /* Accessible text                    Pairs with background colors */
+  --crimson\/12: #621639;  /* Accessible text                    Pairs with background colors */
+  --pink\/1: #FFFCFE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --pink\/2: #FEF7FB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --pink\/3: #FEE9F5;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --pink\/4: #FBDCEF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --pink\/5: #F6CEE7;  /* Interactive components Pairs with step 12 labels */
+  --pink\/6: #EFBFDD;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --pink\/7: #E7ACD0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --pink\/8: #DD93C2;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --pink\/9: #D6409F;  /* Solid colors                             Pairs with white text */
+  --pink\/10: #CF3897;  /* Solid colors                             Pairs with white text */
+  --pink\/11: #C2298A;  /* Accessible text                    Pairs with background colors */
+  --pink\/12: #651249;  /* Accessible text                    Pairs with background colors */
+  --plum\/1: #FEFCFF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --plum\/2: #FDF7FD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --plum\/3: #FBEBFB;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --plum\/4: #F7DEF8;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --plum\/5: #F2D1F3;  /* Interactive components Pairs with step 12 labels */
+  --plum\/6: #E9C2EC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --plum\/7: #DEADE3;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --plum\/8: #CF91D8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --plum\/9: #AB4ABA;  /* Solid colors                             Pairs with white text */
+  --plum\/10: #A144AF;  /* Solid colors                             Pairs with white text */
+  --plum\/11: #953EA3;  /* Accessible text                    Pairs with background colors */
+  --plum\/12: #53195D;  /* Accessible text                    Pairs with background colors */
+  --purple\/1: #FEFCFE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --purple\/2: #FBF7FE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --purple\/3: #F7EDFE;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --purple\/4: #F2E2FC;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --purple\/5: #EAD5F9;  /* Interactive components Pairs with step 12 labels */
+  --purple\/6: #E0C4F4;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --purple\/7: #D1AFEC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --purple\/8: #BE93E4;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --purple\/9: #8E4EC6;  /* Solid colors                             Pairs with white text */
+  --purple\/10: #8347B9;  /* Solid colors                             Pairs with white text */
+  --purple\/11: #8145B5;  /* Accessible text                    Pairs with background colors */
+  --purple\/12: #402060;  /* Accessible text                    Pairs with background colors */
+  --violet\/1: #FDFCFE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --iris\/1: #FDFDFF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --iris\/2: #F8F8FF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --iris\/3: #F0F1FE;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --iris\/4: #E6E7FF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --iris\/5: #DADCFF;  /* Interactive components Pairs with step 12 labels */
+  --iris\/6: #CBCDFF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --iris\/7: #B8BAF8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --iris\/8: #9B9EF0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --iris\/9: #5B5BD6;  /* Solid colors                             Pairs with white text */
+  --iris\/10: #5151CD;  /* Solid colors                             Pairs with white text */
+  --iris\/11: #5753C6;  /* Accessible text                    Pairs with background colors */
+  --iris\/12: #272962;  /* Accessible text                    Pairs with background colors */
+  --indigo\/1: #FDFDFE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --indigo\/2: #F7F9FF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --indigo\/3: #EDF2FE;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --indigo\/4: #E1E9FF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --indigo\/5: #D2DEFF;  /* Interactive components Pairs with step 12 labels */
+  --indigo\/6: #C1D0FF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --indigo\/7: #ABBDF9;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --indigo\/8: #8DA4EF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --indigo\/9: #3E63DD;  /* Solid colors                             Pairs with white text */
+  --indigo\/10: #3358D4;  /* Solid colors                             Pairs with white text */
+  --indigo\/11: #3A5BC7;  /* Accessible text                    Pairs with background colors */
+  --indigo\/12: #1F2D5C;  /* Accessible text                    Pairs with background colors */
+  --blue\/1: #FBFDFF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --blue\/2: #F4FAFF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --blue\/3: #E6F4FE;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --blue\/4: #D5EFFF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --blue\/5: #C2E5FF;  /* Interactive components Pairs with step 12 labels */
+  --blue\/6: #ACD8FC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --blue\/7: #8EC8F6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --blue\/8: #5EB1EF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --blue\/9: #0090FF;  /* Solid colors                             Pairs with white text */
+  --blue\/10: #0588F0;  /* Solid colors                             Pairs with white text */
+  --blue\/11: #0D74CE;  /* Accessible text                    Pairs with background colors */
+  --blue\/12: #113264;  /* Accessible text                    Pairs with background colors */
+  --cyan\/1: #FAFDFE;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --cyan\/2: #F2FAFB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --cyan\/3: #DEF7F9;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --cyan\/4: #CAF1F6;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --cyan\/5: #B5E9F0;  /* Interactive components Pairs with step 12 labels */
+  --cyan\/6: #9DDDE7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --cyan\/7: #7DCEDC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --cyan\/8: #3DB9CF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --cyan\/9: #00A2C7;  /* Solid colors                             Pairs with white text */
+  --cyan\/10: #0797B9;  /* Solid colors                             Pairs with white text */
+  --cyan\/11: #107D98;  /* Accessible text                    Pairs with background colors */
+  --cyan\/12: #0D3C48;  /* Accessible text                    Pairs with background colors */
+  --teal\/1: #FAFEFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --teal\/2: #F3FBF9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --teal\/3: #E0F8F3;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --teal\/4: #CCF3EA;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --teal\/5: #B8EAE0;  /* Interactive components Pairs with step 12 labels */
+  --teal\/6: #A1DED2;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --teal\/7: #83CDC1;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --teal\/8: #53B9AB;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --teal\/9: #12A594;  /* Solid colors                             Pairs with white text */
+  --teal\/10: #0D9B8A;  /* Solid colors                             Pairs with white text */
+  --teal\/11: #008573;  /* Accessible text                    Pairs with background colors */
+  --teal\/12: #0D3D38;  /* Accessible text                    Pairs with background colors */
+  --jade\/1: #FBFEFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --jade\/2: #F4FBF7;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --jade\/3: #E6F7ED;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --jade\/4: #D6F1E3;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --jade\/5: #C3E9D7;  /* Interactive components Pairs with step 12 labels */
+  --jade\/6: #ACDEC8;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --jade\/7: #8BCEB6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --jade\/8: #56BA9F;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --jade\/9: #29A383;  /* Solid colors                             Pairs with white text */
+  --jade\/10: #26997B;  /* Solid colors                             Pairs with white text */
+  --jade\/11: #208368;  /* Accessible text                    Pairs with background colors */
+  --jade\/12: #1D3B31;  /* Accessible text                    Pairs with background colors */
+  --green\/1: #FBFEFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --green\/2: #F4FBF6;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --green\/3: #E6F6EB;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --green\/4: #D6F1DF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --green\/5: #C4E8D1;  /* Interactive components Pairs with step 12 labels */
+  --green\/6: #ADDDC0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --green\/7: #8ECEAA;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --green\/8: #5BB98B;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --green\/9: #30A46C;  /* Solid colors                             Pairs with white text */
+  --green\/10: #2B9A66;  /* Solid colors                             Pairs with white text */
+  --green\/11: #218358;  /* Accessible text                    Pairs with background colors */
+  --green\/12: #193B2D;  /* Accessible text                    Pairs with background colors */
+  --grass\/1: #FBFEFB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --grass\/2: #F5FBF5;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --grass\/3: #E9F6E9;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --grass\/4: #DAF1DB;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --grass\/5: #C9E8CA;  /* Interactive components Pairs with step 12 labels */
+  --grass\/6: #B2DDB5;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --grass\/7: #94CE9A;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --grass\/8: #65BA74;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --grass\/9: #46A758;  /* Solid colors                             Pairs with white text */
+  --grass\/10: #3E9B4F;  /* Solid colors                             Pairs with white text */
+  --grass\/11: #2A7E3B;  /* Accessible text                    Pairs with background colors */
+  --grass\/12: #203C25;  /* Accessible text                    Pairs with background colors */
+  --bronze\/1: #FDFCFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --bronze\/2: #FDF7F5;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --bronze\/3: #F6EDEA;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --bronze\/4: #EFE4DF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --bronze\/5: #E7D9D3;  /* Interactive components Pairs with step 12 labels */
+  --bronze\/6: #DFCDC5;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --bronze\/7: #D3BCB3;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --bronze\/8: #C2A499;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --bronze\/9: #A18072;  /* Solid colors                             Pairs with white text */
+  --bronze\/10: #957468;  /* Solid colors                             Pairs with white text */
+  --bronze\/11: #7D5E54;  /* Accessible text                    Pairs with background colors */
+  --bronze\/12: #43302B;  /* Accessible text                    Pairs with background colors */
+  --violet\/2: #FAF8FF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --violet\/3: #F4F0FE;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --violet\/4: #EBE4FF;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --violet\/5: #E1D9FF;  /* Interactive components Pairs with step 12 labels */
+  --violet\/6: #D4CAFE;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --violet\/7: #C2B5F5;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --violet\/8: #AA99EC;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --violet\/9: #6E56CF;  /* Solid colors                             Pairs with white text */
+  --violet\/10: #654DC4;  /* Solid colors                             Pairs with white text */
+  --violet\/11: #6550B9;  /* Accessible text                    Pairs with background colors */
+  --violet\/12: #2F265F;  /* Accessible text                    Pairs with background colors */
+  --gold\/1: #FDFDFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --gold\/2: #FAF9F2;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --gold\/3: #F2F0E7;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --gold\/4: #EAE6DB;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --gold\/5: #E1DCCF;  /* Interactive components Pairs with step 12 labels */
+  --gold\/6: #D8D0BF;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gold\/7: #CBC0AA;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gold\/8: #B9A88D;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --gold\/9: #978365;  /* Solid colors                             Pairs with white text */
+  --gold\/10: #8C7A5E;  /* Solid colors                             Pairs with white text */
+  --gold\/11: #71624B;  /* Accessible text                    Pairs with background colors */
+  --gold\/12: #3B352B;  /* Accessible text                    Pairs with background colors */
+  --brown\/1: #FEFDFC;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --brown\/2: #FCF9F6;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --brown\/3: #F6EEE7;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --brown\/4: #F0E4D9;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --brown\/5: #EBDACA;  /* Interactive components Pairs with step 12 labels */
+  --brown\/6: #E4CDB7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --brown\/7: #DCBC9F;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --brown\/8: #CEA37E;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --brown\/9: #AD7F58;  /* Solid colors                             Pairs with white text */
+  --brown\/10: #A07553;  /* Solid colors                             Pairs with white text */
+  --brown\/11: #815E46;  /* Accessible text                    Pairs with background colors */
+  --brown\/12: #3E332E;  /* Accessible text                    Pairs with background colors */
+  --orange\/1: #FEFCFB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --orange\/2: #FFF7ED;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --orange\/3: #FFEFD6;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --orange\/4: #FFDFB5;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --orange\/5: #FFD19A;  /* Interactive components Pairs with step 12 labels */
+  --orange\/6: #FFC182;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --orange\/7: #F5AE73;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --orange\/8: #EC9455;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --orange\/9: #F76B15;  /* Solid colors                             Pairs with white text */
+  --orange\/10: #EF5F00;  /* Solid colors                             Pairs with white text */
+  --orange\/11: #CC4E00;  /* Accessible text                    Pairs with background colors */
+  --orange\/12: #582D1D;  /* Accessible text                    Pairs with background colors */
+  --amber\/1: #FEFDFB;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --amber\/2: #FEFBE9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --amber\/3: #FFF7C2;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --amber\/4: #FFEE9C;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --amber\/5: #FBE577;  /* Interactive components Pairs with step 12 labels */
+  --amber\/6: #F3D673;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --amber\/7: #E9C162;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --amber\/8: #E2A336;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --amber\/9: #FFC53D;  /* Solid colors                             Pairs with white text */
+  --amber\/10: #FFBA18;  /* Solid colors                             Pairs with white text */
+  --amber\/11: #AB6400;  /* Accessible text                    Pairs with background colors */
+  --amber\/12: #4F3422;  /* Accessible text                    Pairs with background colors */
+  --yellow\/1: #FDFDF9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --yellow\/2: #FEFCE9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --yellow\/3: #FFFAB8;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --yellow\/4: #FFF394;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --yellow\/5: #FFE770;  /* Interactive components Pairs with step 12 labels */
+  --yellow\/6: #F3D768;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --yellow\/7: #E4C767;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --yellow\/8: #D5AE39;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --yellow\/9: #FFE629;  /* Solid colors                             Pairs with white text */
+  --yellow\/10: #FFDC00;  /* Solid colors                             Pairs with white text */
+  --yellow\/11: #9E6C00;  /* Accessible text                    Pairs with background colors */
+  --yellow\/12: #473B1F;  /* Accessible text                    Pairs with background colors */
+  --lime\/1: #FCFDFA;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --lime\/2: #F8FAF3;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --lime\/3: #EEF6D6;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --lime\/4: #E2F0BD;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --lime\/5: #D3E7A6;  /* Interactive components Pairs with step 12 labels */
+  --lime\/6: #C2DA91;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --lime\/7: #ABC978;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --lime\/8: #8DB654;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --lime\/9: #BDEE63;  /* Solid colors                             Pairs with white text */
+  --lime\/10: #B0E64C;  /* Solid colors                             Pairs with white text */
+  --lime\/11: #5C7C2F;  /* Accessible text                    Pairs with background colors */
+  --lime\/12: #37401C;  /* Accessible text                    Pairs with background colors */
+  --mint\/1: #F9FEFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --mint\/2: #F2FBF9;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --mint\/3: #DDF9F2;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --mint\/4: #C8F4E9;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --mint\/5: #B3ECDE;  /* Interactive components Pairs with step 12 labels */
+  --mint\/6: #9CE0D0;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mint\/7: #7ECFBD;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mint\/8: #4CBBA5;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --mint\/9: #86EAD4;  /* Solid colors                             Pairs with white text */
+  --mint\/10: #7DE0CB;  /* Solid colors                             Pairs with white text */
+  --mint\/11: #027864;  /* Accessible text                    Pairs with background colors */
+  --mint\/12: #16433C;  /* Accessible text                    Pairs with background colors */
+  --sky\/1: #F9FEFF;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --black\/1: #0000000D;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --black\/2: #0000001A;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --black\/3: #00000026;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --black\/4: #0003;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --black\/5: #0000004D;  /* Interactive components Pairs with step 12 labels */
+  --black\/6: #0006;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --black\/7: #00000080;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --black\/8: #0009;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --black\/9: #000000B2;  /* Solid colors                             Pairs with white text */
+  --black\/10: #000C;  /* Solid colors                             Pairs with white text */
+  --black\/11: #000000E5;  /* Accessible text                    Pairs with background colors */
+  --black\/12: #000000F2;  /* Accessible text                    Pairs with background colors */
+  --white\/1: #FFFFFF0D;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --white\/2: #FFFFFF1A;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --white\/3: #FFFFFF26;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --white\/4: #FFF3;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --white\/5: #FFFFFF4D;  /* Interactive components Pairs with step 12 labels */
+  --white\/6: #FFF6;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --white\/7: #FFFFFF80;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --white\/8: #FFF9;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --white\/9: #FFFFFFB2;  /* Solid colors                             Pairs with white text */
+  --white\/10: #FFFC;  /* Solid colors                             Pairs with white text */
+  --white\/11: #FFFFFFE5;  /* Accessible text                    Pairs with background colors */
+  --white\/12: #FFFFFFF2;  /* Accessible text                    Pairs with background colors */
+  --sky\/2: #F1FAFD;  /* Backgrounds                   Pairs with steps 11, 12 text */
+  --sky\/3: #E1F6FD;  /* Interactive components Pairs with steps 11 labels, step 12 text */
+  --sky\/4: #D1F0FA;  /* Interactive components Pairs with Steps 11, 12 labels */
+  --sky\/5: #BEE7F5;  /* Interactive components Pairs with step 12 labels */
+  --sky\/6: #A9DAED;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sky\/7: #8DCAE3;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sky\/8: #60B3D7;  /* Borders and separators Pairs with steps 1–5 backgrounds */
+  --sky\/9: #7CE2FE;  /* Solid colors                             Pairs with white text */
+  --sky\/10: #74DAF8;  /* Solid colors                             Pairs with white text */
+  --sky\/11: #00749E;  /* Accessible text                    Pairs with background colors */
+  --sky\/12: #1D3E56;  /* Accessible text                    Pairs with background colors */
+  --semantic-background: #696867;
+  --semantic-border: #898887;
+  --semantic-foreground: var(--white);
+  --radius-none: var(--0);
+  --radius-xs: var(--2);
+  --radius-sm: var(--6);
+  --radius-md: var(--8);
+  --radius-lg: var(--10);
+  --radius-xl: var(--14);
+  --radius-2xl: var(--18);
+  --radius-3xl: var(--22);
+  --radius-4xl: var(--26);
+  --radius-full: var(--9999);
+  --stroke-width: var(--2);
+  --border-width: var(--1);
+}
+
+.text-xs-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-xs-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text-sm-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-sm-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text-base-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-base-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.text-lg-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-lg-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-2xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-3xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-4xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-5xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-6xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-7xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-8xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-black {
+  font-family: "Figtree";
+  font-style: "Black";
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-extra-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-bold {
+  font-family: "Figtree";
+  font-style: "Bold";
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-semi-bold {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-medium {
+  font-family: "Figtree";
+  font-style: "Medium";
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-regular {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-light {
+  font-family: "Figtree";
+  font-style: "Light";
+  font-size: 128px;
+  font-weight: 300;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-extra-light {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
+.text-9xl-thin {
+  font-family: "Figtree";
+  font-style: "Regular";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 128px;
+  letter-spacing: 0px;
+}
+
