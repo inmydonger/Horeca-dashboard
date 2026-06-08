@@ -119,10 +119,10 @@ const mockARAging = [
 ];
 
 const mockSalesSummary = [
-  { id: 1, date: '2023-10-01', customer: 'Grand Hyatt Jakarta', product: 'Premium Arabica Blend (10kg)', booked: 15000000, collected: 15000000 },
-  { id: 2, date: '2023-10-02', customer: 'Kopi Kenangan Group', product: 'Robusta Espresso Roast (5kg)', booked: 8000000, collected: 0 },
-  { id: 3, date: '2023-10-02', customer: 'Ismaya Group', product: 'Oat Milk Barista Edition (12x1L)', booked: 12500000, collected: 12500000 },
-  { id: 4, date: '2023-10-03', customer: 'Union Group', product: 'Matcha Culinary Grade (1kg)', booked: 4500000, collected: 4500000 },
+  { id: 1, date: '2026-10-01', customer: 'Grand Hyatt Jakarta', product: 'SHORT RIBS ECT A', booked: 15000000, collected: 15000000 },
+  { id: 2, date: '2026-10-02', customer: 'Kopi Kenangan Group', product: 'HEAD MEAT LOCKERVALLEY @27,2', booked: 8000000, collected: 0 },
+  { id: 3, date: '2026-10-02', customer: 'Ismaya Group', product: 'BRISKET BONE PPCS ME 15', booked: 12500000, collected: 12500000 },
+  { id: 4, date: '2026-10-03', customer: 'Union Group', product: 'TENDERLOIN A', booked: 4500000, collected: 4500000 },
 ];
 
 const mockReportsData = {
@@ -262,7 +262,7 @@ export function Analytics() {
         </div>
         <div>
           <Button 
-            className="bg-slate-900 text-white hover:bg-slate-800 shadow-sm"
+            className="bg-[#DC2626] text-white hover:bg-red-700 shadow-sm"
             onClick={() => setIsSchedulerOpen(true)}
           >
             <Clock className="mr-2 h-4 w-4" />
