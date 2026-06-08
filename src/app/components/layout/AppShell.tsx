@@ -39,15 +39,9 @@ export function AppShell() {
               <span className="font-black text-blue-800 text-xl tracking-tight">HORECA</span>
             </div>
           )}
-          {isCollapsed && (
-            <div className="flex flex-col items-center justify-center overflow-hidden animate-in fade-in duration-300">
-              <span className="font-bold text-orange-600 text-[10px]">the</span>
-              <span className="font-black text-blue-800 text-sm tracking-tight">H</span>
-            </div>
-          )}
           <button 
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className={cn("p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-md transition-colors flex-shrink-0 focus:outline-none", isCollapsed && "hidden")}
+            className="p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-md transition-colors flex-shrink-0 focus:outline-none"
             aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
           >
             <PanelLeft className="w-5 h-5" />
@@ -114,15 +108,7 @@ export function AppShell() {
         {/* Top Header */}
         <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-4 lg:px-6 flex-shrink-0 gap-4">
           <div className="flex items-center gap-4 flex-1 max-w-md">
-            {isCollapsed && (
-              <button 
-                onClick={() => setIsCollapsed(!isCollapsed)}
-                className="p-1.5 -ml-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-md transition-colors flex-shrink-0 focus:outline-none"
-                aria-label="Expand sidebar"
-              >
-                <PanelLeft className="w-5 h-5" />
-              </button>
-            )}
+
             <div className="relative w-full">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-slate-400" />
               <input
