@@ -85,14 +85,13 @@ export function AppShell() {
           isCollapsed ? "p-3 flex flex-col gap-3" : "p-4"
         )}>
           <div className={cn("flex items-center", isCollapsed ? "justify-center" : "gap-3 px-2 py-2")}>
-            <div className="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0 text-sm font-medium text-white">SA</div>
+            <div className="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0 text-sm font-medium text-white">D</div>
             {!isCollapsed && (
               <div className="flex flex-col whitespace-nowrap animate-in fade-in duration-300 overflow-hidden">
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-slate-900 truncate">Sarah</span>
-                  <span className="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">Superadmin</span>
+                  <span className="text-sm font-medium text-slate-900 truncate">Dewi</span>
+                  <span className="text-[12px] font-medium bg-[#f1f5f9] text-[#314158] px-2.5 py-0.5 rounded-full">Superadmin</span>
                 </div>
-                <span className="text-xs text-slate-500 truncate mt-0.5">Premium Roasters</span>
               </div>
             )}
           </div>

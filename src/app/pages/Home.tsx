@@ -80,7 +80,7 @@ export function Home() {
       {/* Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold text-slate-900 tracking-tight">Welcome back, Sarah</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 tracking-tight">Welcome back, Dewi</h1>
           <p className="text-slate-500 text-sm mt-1">Here's what's happening with your wholesale operations today.</p>
         </div>
         <div className="flex items-center gap-2">
